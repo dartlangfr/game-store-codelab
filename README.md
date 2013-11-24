@@ -38,7 +38,7 @@ This codelab is divided into the following sections:
 _**Keywords**: class, custom element, binding, template_
 
 1. Create a new Polymer application named `game_store_codelab` and explore it
-  - **TODO: screenshot**
+    ![Project creation](/docs/img/project-creation.png)
   - `pubspec.yaml` with its new dependency
   
     ```YAML
