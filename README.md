@@ -4,6 +4,8 @@ Game Store Codelab
 Learn how to build a webapp with Dart and Polymer.  
 <!--
 TODO:
+- Add wiki common references for images
+- Tests all links
 - Publish on gh-pages branches and add a link to the template
 -->
 # Introduction
@@ -61,7 +63,7 @@ _**Keywords**: class, custom element, binding, template_
     </body>
     ```
 
-2. Copy all files from the _[Template](./Template)_ folder into the _web_ directory of your project
+2. Copy all files from the _[template](./template)_ folder into the _web_ directory of your project
 3. Create a new custom element `x-game`
   - **TODO**
 
