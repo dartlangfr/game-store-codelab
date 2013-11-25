@@ -4,6 +4,7 @@ Game Store Codelab
 Learn how to build a webapp with Dart and Polymer.  
 <!--
 TODO:
+- Add star character unicode code
 - Add wiki common references for images
 - Tests all links
 - Publish on gh-pages branches and add a link to the template
