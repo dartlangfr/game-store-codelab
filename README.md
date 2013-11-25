@@ -137,6 +137,30 @@ _**Keywords**: custom element, template, binding_
 ## 2. Show the list of all games (detailed template)
 > **Goal**: _As a user, I want to see the list of all games with a detailed template_
 
+_**Keywords**: template, repeat, published_
+
+1. Create a new `models.dart` with the _Game_ class and some instances.
+
+TODO: samples
+
+2. Create a new custom element x-games
+
+TODO
+
+3. In `game_store_codelab.html`, import this component instead of `x-game`
+
+4. Make observable the game list
+
+TODO : where is declare the list ?
+
+5. Import the `x-game` from `x-games`
+
+6. In `game.dart`, `@published the game attribute
+
+> **Hints:**
+>
+> - ???
+
 <a name="user-story-3"></a>
 ## 3. Filter and sort the games list
 > **Goal**: _As a user, I want to filter and sort the games list_
