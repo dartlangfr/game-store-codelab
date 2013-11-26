@@ -41,6 +41,7 @@ This codelab is divided into the following sections:
 _**Keywords**: custom element, template, binding_
 
 1. Create a new Polymer application named `game_store_codelab` and explore it
+  - Fill the _Application name_ and select _Web application (using the polymer library)_  
     ![Project creation](/docs/img/project-creation.png)
   - `pubspec.yaml` includes a new dependency
   
