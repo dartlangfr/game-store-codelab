@@ -4,7 +4,6 @@ Game Store Codelab
 Learn how to build a webapp with Dart and Polymer.  
 <!--
 TODO:
-- Add star character unicode code
 - Add wiki common references for images
 - Tests all links
 - Publish on gh-pages branches and add a link to the template
@@ -42,13 +41,14 @@ _**Keywords**: class, custom element, binding, template_
 
 1. Create a new Polymer application named `game_store_codelab` and explore it
     ![Project creation](/docs/img/project-creation.png)
-  - `pubspec.yaml` with its new dependency
+  - `pubspec.yaml` includes a new dependency
   
     ```YAML
     dependencies:
       polymer: any
     ```
-  - `clickcounter.html` and `clickcounter.dart` to know how to build a custom element  
+  - `build.dart` is runned after a file is saved, and displays Polymer warnings from the linter
+  - `clickcounter.html` and `clickcounter.dart` to know how to build a custom element
   - `game_store_codelab.html` to know how Polymer is initialized and how a custom element is used
   
     ```HTML
@@ -70,7 +70,7 @@ _**Keywords**: class, custom element, binding, template_
 
 > **Hints:**
 > 
-> - Use a filter function to transform the rating integer to star characters (See [Polymer expressions][5])
+> - Use a filter function to transform the rating integer to &#9733; (`"\u2605"`) characters (See [Polymer expressions][5])
 
 <a name="user-story-2"></a>
 ## 2. Show the list of all games (detailed template)
