@@ -30,6 +30,7 @@ This codelab is divided into the following sections:
 - [A Tour of the Dart Language][2]
 - [Dart API Reference][3]
 - [Polymer.dart][4]
+- [Polymer.dart examples][6]
 
 # User stories
 
@@ -37,7 +38,7 @@ This codelab is divided into the following sections:
 ## 1. Show the content of a game
 > **Goal**: _As a user, I want to see the content of a game_
 
-_**Keywords**: class, custom element, binding, template_
+_**Keywords**: custom element, template, binding_
 
 1. Create a new Polymer application named `game_store_codelab` and explore it
     ![Project creation](/docs/img/project-creation.png)
@@ -96,13 +97,39 @@ _**Keywords**: class, custom element, binding, template_
     ```
   - You should see something like this ([Hints](#user-story-1-hints)):  
     ![x-game first import](docs/img/x-game-first-import-style.png)
+4. Congrats! You created your first custom element! But it's all static, let's do some bindings :)
+  - Create a file `models.dart` with the class `Game`:
+    ```Dart
+    class Game {
+      int id;
+      String name;
+      String genre;
+      String description;
+      String image;
+      int rating;
+      
+      // CONSTRUCTORS
+      Game(this.id, this.name, this.genre, this.description, this.image, this.rating);
+      Game.sample() : this(null, "Game name", "Game genre", "Game description", "chess.jpg", 4);
+    }
+    ```
+  - Add a `game` attribute in the `x-game` class:
+    ```Dart
+    Game game = new Game.sample();
+    ```
+  - Bind `game` fields into the `x-game` template ([Hints](#user-story-1-hints)):
+    - Game name should be uppercased
+    - Rating should be transformed into &#9733; (`"\u2605"`) characters
+
+    ![x-game binding](docs/img/x-game-binding.png)
 
 <a name="user-story-1-hints"></a>
 > **Hints:**
 > 
 > - Don't forget to add needed tags in `index.html` header
 > - To apply styles from the document to the contents of a custom element, add this getter in its dart class: `bool get applyAuthorStyles => true;`
-> - Use a filter function to transform the rating integer to &#9733; (`"\u2605"`) characters (See [Polymer expressions][5])
+> - Use a filter function to uppercase the game name, defined in the custom element class (See [Polymer expressions][5])
+> - Use also a filter function to transform the rating integer to &#9733; characters (See [List.generate](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html#generate) and [List.join](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html#join))
 
 <a name="user-story-2"></a>
 ## 2. Show the list of all games (detailed template)
@@ -142,3 +169,4 @@ _Thanks to Thierry Lau for his AngularJS project [AngularMovie](https://github.c
   [3]: http://api.dartlang.org/docs/channels/stable/latest/
   [4]: https://www.dartlang.org/polymer-dart/
   [5]: http://pub.dartlang.org/packages/polymer_expressions
+  [6]: https://github.com/sethladd/dart-polymer-dart-examples/tree/master/web
