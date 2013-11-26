@@ -143,19 +143,18 @@ _**Keywords**: template, repeat, published_
 
 TODO: samples
 
-2. Create a new custom element x-games
+2. Create a new custom element `x-games`
+  - Create `games.html` and `games.dart` files
+  - Copy the `GAMES_TEMPLATE`  html blocks from the templates into the body of your custom element
+  - Import `x-game` component in your `games.html` file.
+  - TODO interate
+  - Import and use it in your `index.html` instead of `x-game`
 
-TODO
 
-3. In `game_store_codelab.html`, import this component instead of `x-game`
 
-4. Make observable the game list
+Make observable the game list
 
-TODO : where is declare the list ?
-
-5. Import the `x-game` from `x-games`
-
-6. In `game.dart`, `@published the game attribute
+In `game.dart`, `@published` the game attribute
 
 > **Hints:**
 >
