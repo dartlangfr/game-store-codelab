@@ -98,7 +98,7 @@ _**Keywords**: custom element, template, binding_
     ```
   - Run `index.html` in Dartium and you should see something like this ([Hints](#user-story-1-hints)):  
     ![x-game first import](docs/img/x-game-first-import-style.png)
-4. Congrats! You created your first custom element! But it's all static, let's do some bindings :)
+4. Congrats! You created your first custom element! But it's all static, let's do some data bindings :)
   - Create a file `models.dart` with the class `Game`:
     ```Dart
     library game_store.model;
@@ -111,7 +111,7 @@ _**Keywords**: custom element, template, binding_
       String image;
       int rating;
       
-      // CONSTRUCTORS
+      // Constructors
       Game(this.id, this.name, this.genre, this.description, this.image, this.rating);
       Game.sample() : this(null, "Game name", "Game genre", "Game description", "chess.jpg", 4);
     }
