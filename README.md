@@ -48,7 +48,7 @@ _**Keywords**: class, custom element, binding, template_
       polymer: any
     ```
   - `build.dart` is runned after a file is saved, and displays Polymer warnings from the linter
-  - `clickcounter.html` and `clickcounter.dart` is a custom element example named `click-counter`
+  - `clickcounter.html` and `clickcounter.dart` is a custom element named `click-counter`
   
     ```HTML
     <polymer-element name="click-counter" attributes="count">
@@ -68,7 +68,7 @@ _**Keywords**: class, custom element, binding, template_
       // ...
     }
     ```
-  - `game_store_codelab.html` initialized Dart and Polymer and import `click-counter` element to used it
+  - `game_store_codelab.html` imports `click-counter` element to used it and initializes Dart and Polymer
   
     ```HTML
     <head>
@@ -94,9 +94,10 @@ _**Keywords**: class, custom element, binding, template_
       <x-game></x-game>
     </section>
     ```
-  - You should see something like this:
-    <a href="docs/img/x-game-first-import.png"><img alt="x-game first import" src="docs/img/x-game-first-import.png" width="400px"></a>
+  - You should see something like this ([Hints](#user-story-1-hints)):  
+    ![x-game first import](docs/img/x-game-first-import-style.png)
 
+<a name="user-story-1-hints"></a>
 > **Hints:**
 > 
 > - Don't forget to add needed tags in `index.html` header
