@@ -96,7 +96,7 @@ _**Keywords**: custom element, template, binding_
       <x-game></x-game>
     </section>
     ```
-  - You should see something like this ([Hints](#user-story-1-hints)):  
+  - Run `index.html` in Dartium and you should see something like this ([Hints](#user-story-1-hints)):  
     ![x-game first import](docs/img/x-game-first-import-style.png)
 4. Congrats! You created your first custom element! But it's all static, let's do some bindings :)
   - Create a file `models.dart` with the class `Game`:
