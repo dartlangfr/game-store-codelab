@@ -1,147 +1,168 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Game Store</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
-</head>
-<body>
+    
+    <!-- TODO: Insert needed tags here -->
+    
+  </head>
+  <body>
+  
     <!-- Navigation bar -->
     <header class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <section class="container">
-                <a class="brand" href="#/welcome">Game Store</a>
-                <ul class="nav">
-                    <li><a href="#/games">Games</a></li>
-                </ul>
-            </section>
-        </div>
+      <div class="navbar-inner">
+        <section class="container">
+          <a class="brand" href="#/welcome">Game Store</a>
+          <ul class="nav">
+            <li><a href="#/games">Games</a></li>
+          </ul>
+        </section>
+      </div>
     </header>
     
     <!-- Main part -->
     <section class="container">
-        <!-- Game template -->
-        <h1>Game</h1>
-
-        <div class="game" id="game">
-            <img id="image" src="img/games/darts.jpg" alt="Game picture" class="span2">
-            <div>
-                <h3 id="name">DARTS
-                   <button id="delete" class="btn btn-danger"><i class="icon-trash icon-white"></i></button>
-                   <a href="#/games/1" class="btn btn-info"><i class="icon-edit icon-white"></i></a>
-                </h3>
-                <p><b>Genre:</b> <span id="genre">Pub game</span></p>
-                <p><b>Description:</b> <span id="description">Darts is a form of throwing game in which small missiles are thrown at a circular target (dartboard) fixed to a wall. Though various boards and rules have been used in the past, the term "darts" usually now refers to a standardised game involving a specific board design and set of rules.</span></p>
-                <p><b>Rating:</b> <span id="rating">&#9733;&#9733;&#9733;</span></p>
-            </div>
+    
+      <!-- TODO: Insert your components here and comment the templates below -->
+    
+      <h1>Game</h1>
+      
+      <!-- GAME_TEMPLATE BEGIN -->
+      <div class="game">
+        <img src="img/games/darts.jpg" alt="Game picture" class="span2">
+        <div>
+          <h3>DARTS
+            <button class="btn btn-danger"><i class="icon-trash icon-white"></i></button>
+            <a href="#/games/1" class="btn btn-info"><i class="icon-edit icon-white"></i></a>
+          </h3>
+          <p><b>Genre:</b> Pub game</p>
+          <p><b>Description:</b> Darts is a form of throwing game in which small missiles are thrown at a circular target (dartboard) fixed to a wall. Though various boards and rules have been used in the past, the term "darts" usually now refers to a standardised game involving a specific board design and set of rules.</p>
+          <p><b>Rating:</b> <span id="rating">&#9733;&#9733;&#9733;</span></p>
         </div>
-
-		<hr />
-
-		<!-- Games template -->
-		<header class="page-header">
-		    <h1>Game store <small>3 games</small>
-		        <a href="#/games/new" class="btn btn-primary">Add a game</a>
-		    </h1>
-		</header>
-
-		<section class="well form-inline">
-			<input type="text" placeholder="Search" class="span5">
-			<section class="pull-right">
-				<button class="btn btn-success"><i class="icon-th-list icon-white"></i></button>
-				<button class="btn btn-info">Sort by name</button>
-				<button class="btn btn-info">Sort by rating</button>
-			</section>
-		</section>
-
-		<table class="table table-striped">
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Genre</th>
-					<th>Rating</th>
-				</tr>
-			</thead>
-			<tbody>
-                <tr><td>Chess</td><td>Board game</td><td>&#9733;&#9733;</td></tr>
-                <tr><td>Darts</td><td>Pub game</td><td>&#9733;&#9733;&#9733;</td></tr>
-                <tr><td>Dices</td><td>Random game</td><td>&#9733;&#9733;&#9733;&#9733;</td></tr>
-          	</tbody>
-      	</table>
-
-        <div class="games">
-            <div class="game">
-                <img src="img/games/chess.jpg" alt="Game picture" class="span2">
-                <div>
-                    <h3>CHESS
-                        <button class="btn btn-danger"><i class="icon-trash icon-white"></i></button>
-                        <a href="#/games/2" class="btn btn-info"><i class="icon-edit icon-white"></i></a>
-                    </h3>
-                    <p><b>Genre:</b> Board game</p>
-                    <p><b>Description:</b> Chess is a two-player strategy board game played on a chessboard, a checkered gameboard with 64 squares arranged in an eight-by-eight grid. It is one of the world's most popular games, played by millions of people worldwide at home, in clubs, online, by correspondence, and in tournaments.</p>
-                    <p><b>Rating:</b> <span id="rating">&#9733;&#9733;</span></p>
-                </div>
-            </div>
-            <div class="game">
-                <img src="img/games/darts.jpg" alt="Game picture" class="span2">
-                <div>
-                    <h3>DARTS
-                        <button class="btn btn-danger"><i class="icon-trash icon-white"></i></button>
-                        <a href="#/games/1" class="btn btn-info"><i class="icon-edit icon-white"></i></a>
-                    </h3>
-                    <p><b>Genre:</b> Pub game</p>
-                    <p><b>Description:</b> Darts is a form of throwing game in which small missiles are thrown at a circular target (dartboard) fixed to a wall. Though various boards and rules have been used in the past, the term "darts" usually now refers to a standardised game involving a specific board design and set of rules.</p>
-                    <p><b>Rating:</b> <span id="rating">&#9733;&#9733;&#9733;</span></p>
-                </div>
-            </div>
-            <div class="game">
-                <img src="img/games/dice.jpg" alt="Game picture" class="span2">
-                <div>
-                    <h3>DICES
-                        <button class="btn btn-danger"><i class="icon-trash icon-white"></i></button>
-                        <a href="#/games/3" class="btn btn-info"><i class="icon-edit icon-white"></i></a>
-                    </h3>
-                    <p><b>Genre:</b> Random game</p>
-                    <p><b>Description:</b> Dice are small throwable objects with multiple resting positions, used for generating random numbers. This makes dice suitable as gambling devices for games like craps, or for use in non-gambling tabletop games.</p>
-                    <p><b>Rating:</b> <span id="rating">&#9733;&#9733;&#9733;&#9733;</span></p>
-                </div>
-            </div>
+      </div>
+      <!-- GAME_TEMPLATE END -->
+      
+      <hr />
+      
+      <!-- GAMES_TEMPLATE BEGIN -->
+      <header class="page-header">
+        <h1>Game store <small>3 games</small>
+          <a href="#/games/new" class="btn btn-primary">Add a game</a>
+        </h1>
+      </header>
+      <section class="well form-inline">
+        <input type="text" placeholder="Search" class="span5">
+        <section class="pull-right">
+          <button class="btn btn-success"><i class="icon-th-list icon-white"></i></button>
+          <button class="btn btn-info">Sort by name</button>
+          <button class="btn btn-info">Sort by rating</button>
+        </section>
+      </section>
+      
+      <!-- GAMES_TEMPLATE_DETAILED BEGIN -->
+      <div class="games">
+        <div class="game">
+          <img src="img/games/chess.jpg" alt="Game picture" class="span2">
+          <div>
+            <h3>CHESS
+              <button class="btn btn-danger"><i class="icon-trash icon-white"></i></button>
+              <a href="#/games/2" class="btn btn-info"><i class="icon-edit icon-white"></i></a>
+            </h3>
+            <p><b>Genre:</b> Board game</p>
+            <p><b>Description:</b> Chess is a two-player strategy board game played on a chessboard, a checkered gameboard with 64 squares arranged in an eight-by-eight grid. It is one of the world's most popular games, played by millions of people worldwide at home, in clubs, online, by correspondence, and in tournaments.</p>
+            <p><b>Rating:</b> <span id="rating">&#9733;&#9733;</span></p>
+          </div>
         </div>
+        <div class="game">
+          <img src="img/games/darts.jpg" alt="Game picture" class="span2">
+          <div>
+            <h3>DARTS
+              <button class="btn btn-danger"><i class="icon-trash icon-white"></i></button>
+              <a href="#/games/1" class="btn btn-info"><i class="icon-edit icon-white"></i></a>
+            </h3>
+            <p><b>Genre:</b> Pub game</p>
+            <p><b>Description:</b> Darts is a form of throwing game in which small missiles are thrown at a circular target (dartboard) fixed to a wall. Though various boards and rules have been used in the past, the term "darts" usually now refers to a standardised game involving a specific board design and set of rules.</p>
+            <p><b>Rating:</b> <span id="rating">&#9733;&#9733;&#9733;</span></p>
+          </div>
+        </div>
+        <div class="game">
+          <img src="img/games/dice.jpg" alt="Game picture" class="span2">
+          <div>
+            <h3>DICES
+              <button class="btn btn-danger"><i class="icon-trash icon-white"></i></button>
+              <a href="#/games/3" class="btn btn-info"><i class="icon-edit icon-white"></i></a>
+            </h3>
+            <p><b>Genre:</b> Random game</p>
+            <p><b>Description:</b> Dice are small throwable objects with multiple resting positions, used for generating random numbers. This makes dice suitable as gambling devices for games like craps, or for use in non-gambling tabletop games.</p>
+            <p><b>Rating:</b> <span id="rating">&#9733;&#9733;&#9733;&#9733;</span></p>
+          </div>
+        </div>
+      </div>
+      <!-- GAMES_TEMPLATE_DETAILED END -->
+      
+      <!-- GAMES_TEMPLATE_COMPACT BEGIN -->
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Genre</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chess</td>
+            <td>Board game</td>
+            <td>&#9733;&#9733;</td>
+          </tr>
+          <tr>
+            <td>Darts</td>
+            <td>Pub game</td>
+            <td>&#9733;&#9733;&#9733;</td>
+          </tr>
+          <tr>
+            <td>Dices</td>
+            <td>Random game</td>
+            <td>&#9733;&#9733;&#9733;&#9733;</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- GAMES_TEMPLATE_COMPACT END -->
+      <!-- GAMES_TEMPLATE END -->
 
-        <hr/>
+      <hr/>
 
-        <!-- Game edit template -->
-		<header class="page-header">
-	        <h1>Game edit</h1>
-        </header>
-
-	    <form class="form-horizontal">
-	        <div class="control-group">
-	            <label class="control-label">Name: </label>
-	            <input type="text" value="DARTS">
-	        </div>
-	        <div class="control-group">
-	            <label class="control-label">Genre: </label>
-	            <input type="text" value="Pub game">
-	        </div>
-	        <div class="control-group">
-	            <label class="control-label">Description: </label>
-	            <textarea>Dart is ...</textarea>
-	        </div>
-	        <div class="control-group">
-	            <label class="control-label">Rating: </label>
-	            <input type="number" value="3" placeholder="from 1 to 5" min="1" max="5">
-	        </div>
-	        <footer class="form-actions">
-	            <a href="#/games" class="btn btn-danger btn-small">Cancel</a>
-	            <button class="btn btn-success">Save</button>
-	        </footer>
-	    </form>
-
-        <hr/>
-
+      <!-- GAME_EDIT_TEMPLATE BEGIN -->
+      <header class="page-header">
+        <h1>Game edit</h1>
+      </header>
+      <div class="form-horizontal">
+        <div class="control-group">
+          <label class="control-label">Name: </label>
+          <input type="text" value="DARTS">
+        </div>
+        <div class="control-group">
+          <label class="control-label">Genre: </label>
+          <input type="text" value="Pub game">
+        </div>
+        <div class="control-group">
+          <label class="control-label">Description: </label>
+          <textarea>Dart is ...</textarea>
+        </div>
+        <div class="control-group">
+          <label class="control-label">Rating: </label>
+          <input type="number" value="3" placeholder="from 1 to 5" min="1" max="5">
+        </div>
+        <footer class="form-actions">
+          <a href="#/games" class="btn btn-danger btn-small">Cancel</a>
+          <button class="btn btn-success">Save</button>
+        </footer>
+      </div>
+      <!-- GAME_EDIT_TEMPLATE END -->
+      
     </section>
-
-</body>
+  </body>
 </html>

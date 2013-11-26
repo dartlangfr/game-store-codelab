@@ -48,8 +48,27 @@ _**Keywords**: class, custom element, binding, template_
       polymer: any
     ```
   - `build.dart` is runned after a file is saved, and displays Polymer warnings from the linter
-  - `clickcounter.html` and `clickcounter.dart` to know how to build a custom element
-  - `game_store_codelab.html` to know how Polymer is initialized and how a custom element is used
+  - `clickcounter.html` and `clickcounter.dart` is a custom element example named `click-counter`
+  
+    ```HTML
+    <polymer-element name="click-counter" attributes="count">
+      <template>
+        <!-- Custom element body -->
+      </template>
+      <script type="application/dart" src="clickcounter.dart"></script>
+    </polymer-element>
+    ```
+    
+    ```Dart
+    import 'package:polymer/polymer.dart';
+
+    @CustomTag('click-counter')
+    class ClickCounter extends PolymerElement {
+      ClickCounter.created() : super.created();
+      // ...
+    }
+    ```
+  - `game_store_codelab.html` initialized Dart and Polymer and import `click-counter` element to used it
   
     ```HTML
     <head>
@@ -66,10 +85,22 @@ _**Keywords**: class, custom element, binding, template_
 
 2. Copy all files from the _[template](./template)_ folder into the _web_ directory of your project
 3. Create a new custom element `x-game`
-  - **TODO**
+  - Create `game.html` and `game.dart` files taking `click-counter` element as an example
+  - Copy the `GAME_TEMPLATE` html blocks from the templates into the body of your custom element
+  - Import and use it in your `index.html` file
+
+    ```HTML
+    <section class="container">
+      <x-game></x-game>
+    </section>
+    ```
+  - You should see something like this:
+    <a href="docs/img/x-game-first-import.png"><img alt="x-game first import" src="docs/img/x-game-first-import.png" width="400px"></a>
 
 > **Hints:**
 > 
+> - Don't forget to add needed tags in `index.html` header
+> - To apply styles from the document to the contents of a custom element, add this getter in its dart class: `bool get applyAuthorStyles => true;`
 > - Use a filter function to transform the rating integer to &#9733; (`"\u2605"`) characters (See [Polymer expressions][5])
 
 <a name="user-story-2"></a>
