@@ -101,6 +101,8 @@ _**Keywords**: custom element, template, binding_
 4. Congrats! You created your first custom element! But it's all static, let's do some bindings :)
   - Create a file `models.dart` with the class `Game`:
     ```Dart
+    library game_store.model;
+    
     class Game {
       int id;
       String name;
@@ -117,7 +119,14 @@ _**Keywords**: custom element, template, binding_
   - Add a `game` attribute in the `x-game` class:
 
     ```Dart
-    Game game = new Game.sample();
+    import 'package:polymer/polymer.dart';
+    import 'models.dart';
+    
+    @CustomTag('x-game')
+    class XGame extends PolymerElement {
+      Game game = new Game.sample();
+      // ...
+    }
     ```
   - Bind `game` fields into the `x-game` template ([Hints](#user-story-1-hints)):
     - Game name should be uppercased
