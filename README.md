@@ -146,28 +146,50 @@ _**Keywords**: custom element, template, binding_
 ## 2. Show the list of all games (detailed template)
 > **Goal**: _As a user, I want to see the list of all games with a detailed template_
 
-_**Keywords**: template, repeat, published_
+_**Keywords**: template, loop, custom attribute, nested template_
 
-1. Create a new `models.dart` with the _Game_ class and some instances.
+1. One game is not enough for a Game Store, create 
+  - Create a file `services.dart` with the class `InMemoryGameStoreService`:
+  
+  ```Dart
+  library game_store.service;
+  import 'models.dart';
 
-TODO: samples
+  final gameStoreService = new InMemoryGameStoreService();
 
-2. Create a new custom element `x-games`
+  class InMemoryGameStoreService {
+    final List<Game> games = [
+      new Game(1, "Darts", "Pub game", 'Darts is ...', "darts.jpg", 5),                    
+       new Game(2, "Chess", "Board game", 'Chess is ...', "chess.jpg", 4),                    
+       new Game(3, "Dices", "Random game", 'Dice are ...', "dice.jpg", 3),                    
+       new Game(4, "Go", "Board game", 'Go is ...', "go.jpg", 2),
+       new Game(5, "Poker", "Card game", 'Poker is ..', "poker.jpg", 4),
+       new Game(6, "Pool", "Pub game", 'Pool is ..', "pool.jpg", 3),
+       new Game(7, "Bingo", "Boring game", 'Bingo is ..', "bingo.jpg", 1)
+    ];
+  }
+  ```
+
+2. Create a new custom element `x-games` 
   - Create `games.html` and `games.dart` files
   - Copy the `GAMES_TEMPLATE`  html blocks from the templates into the body of your custom element
   - Import `x-game` component in your `games.html` file.
-  - TODO interate
+  - Transform `game` attribute in `x-game` to be a custom element attribute. ([Hint](https://www.dartlang.org/polymer-dart/#custom-attributes))
+  - Add a `games` attributes in `x-games` :
+  ```Dart
+  List<Game> games = gameStoreService.getAll();
+  ```
+  - Loop on the games ([Hint](https://www.dartlang.org/polymer-dart/#template-loops))
   - Import and use it in your `index.html` instead of `x-game`
+  
+3. Congrats ! You have more games !
 
-
-
-Make observable the game list
-
-In `game.dart`, `@published` the game attribute
+    ![x-games list](docs/img/x-games-list.png)
+  
 
 > **Hints:**
 >
-> - ???
+> - Try first to loop with a simple div. 
 
 <a name="user-story-3"></a>
 ## 3. Filter and sort the games list

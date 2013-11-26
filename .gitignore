@@ -11,3 +11,4 @@ pubspec.lock
 .project
 .settings
 .buildlog
+.DS_Store
