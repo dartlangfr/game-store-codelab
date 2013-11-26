@@ -114,12 +114,13 @@ _**Keywords**: custom element, template, binding_
     }
     ```
   - Add a `game` attribute in the `x-game` class:
+
     ```Dart
     Game game = new Game.sample();
     ```
   - Bind `game` fields into the `x-game` template ([Hints](#user-story-1-hints)):
     - Game name should be uppercased
-    - Rating should be transformed into &#9733; (`"\u2605"`) characters
+    - Rating should be transformed into &#9733; characters (`"\u2605"`)
 
     ![x-game binding](docs/img/x-game-binding.png)
 
