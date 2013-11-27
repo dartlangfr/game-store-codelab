@@ -149,7 +149,8 @@ _**Keywords**: custom element, template, binding_
 _**Keywords**: template loop, custom attribute, nested template_
 
 1. Create a new custom element `x-games` 
-  - Create `games.html` and `games.dart` files and copy the `GAMES_TEMPLATE`  html blocks from the templates into its body
+  - Create `games.html` and `games.dart` files and copy the `GAMES_TEMPLATE`  html blocks from the templates into its body  
+  _We are going to work with the `GAMES_TEMPLATE_DETAILED` in this user story so comment or remove the `GAMES_TEMPLATE_COMPACT`_
   - Import and use it in your `index.html` instead of `x-game` and check the result
 2. One game is not enough for a Game Store, create a service to retrieve games
   - Create a file `services.dart` with the class `InMemoryGameStoreService`:
@@ -181,7 +182,7 @@ _**Keywords**: template loop, custom attribute, nested template_
     ```
 3. Iterate over the games list
   - Import `x-game` component in your `games.html` file and to be able to reused it.
-  - Loop over games using a template loop and reusing the `x-game` component
+  - Loop over games using a template loop and reusing the `x-game` component like this:
 
     ```HTML
     <x-game game="{{game}}"></x-game>
