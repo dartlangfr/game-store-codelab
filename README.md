@@ -14,6 +14,9 @@ The goal of this codelab is to develop a game store application from a html temp
 ## Prerequisites
 Before you begin this codelab, you should have the last [Dart Editor][1] Setup ready.
 
+## Templates
+**TODO**
+
 ## User stories
 This codelab is divided into the following sections:
 
@@ -274,14 +277,14 @@ _**Keywords**: Template conditionals_
 
 1. Modify `x-games` to deal with compact view 
   - Add a observable boolean field `isCompact` in `game.dart`
-  - Use a template condition to display full view when `isCompact` is false. ([Hint](https://www.dartlang.org/polymer-dart/#template-conditionals)]).
+  - Use a template condition to display full view when `isCompact` is false. ([Hints](https://www.dartlang.org/polymer-dart/#template-conditionals)).
   - Copy `GAMES_TEMPLATE_COMPACT` template and display it when `isCompact` is true. ([Hints](#user-story-4-hints))
   
 2. Manage the change of view.  
   - In `games.dart`, add a toggle method `compact` to change `isCompact` value.
   - In `games.html`, call the `compact` method when the user click on switch view button.
   
-3. Great ! Needless to scroll down to see all your games
+3. Great! Needless to scroll down to see all your games
  
 ![x-games compact](docs/img/x-games-compact.png)
  
