@@ -17,7 +17,7 @@ _**Keywords**: template loop, custom attribute, nested template_
     final gameStoreService = new InMemoryGameStoreService();
   
     class InMemoryGameStoreService {
-      final List<Game> _games = [
+      final List<Game> games = [
          new Game(1, "Darts", "Pub game", 'Darts is ...', "darts.jpg", 5),                    
          new Game(2, "Chess", "Board game", 'Chess is ...', "chess.jpg", 4),                    
          new Game(3, "Dices", "Random game", 'Dice are ...', "dice.jpg", 3),                    
@@ -26,14 +26,12 @@ _**Keywords**: template loop, custom attribute, nested template_
          new Game(6, "Pool", "Pub game", 'Pool is ..', "pool.jpg", 3),
          new Game(7, "Bingo", "Boring game", 'Bingo is ..', "bingo.jpg", 1)
       ];
-      
-      List<Game> getAll() => _games;
     }
     ```
   - Add a `games` attributes in `x-games` class and instantiate it with games retrieved from the service:
 
     ```Dart
-    List<Game> games = gameStoreService.getAll();
+    List<Game> games = gameStoreService.games;
     ```    
 3. Iterate over the games list
   - Import `x-game` component in your `games.html` file and to be able to reused it.
