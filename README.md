@@ -211,7 +211,7 @@ _**Keywords**: Template conditionals_
 1. Modify `x-games` to deal with compact view 
   - Add a observable boolean field `isCompact` in `game.dart`
   - Use a template condition to display full view when `isCompact` is false. ([Hint](https://www.dartlang.org/polymer-dart/#template-conditionals)]).
-  - Copy `GAMES_TEMPLATE_COMPACT` template and display it when `isCompact` is true. ([Hints](#user-story-3-hints))
+  - Copy `GAMES_TEMPLATE_COMPACT` template and display it when `isCompact` is true. ([Hints](#user-story-4-hints))
   
 2. Manage the change of view.  
   - In `games.dart`, add a toggle method to change `isCompact` value :
@@ -227,7 +227,7 @@ _**Keywords**: Template conditionals_
   
 3. Great ! Needless to scroll down to see all your games
  
-![x-games list](docs/img/x-games-compact.png)
+![x-games compact](docs/img/x-games-compact.png)
  
 <a name="user-story-4-hints"></a>
 > **Hints:** 
@@ -240,6 +240,29 @@ _**Keywords**: Template conditionals_
 <a name="user-story-6"></a>
 ## 6. Add a new game
 > **Goal**: _As a user, I want to add a new game_
+
+_**Keywords**: Custom element _
+
+
+1. Modify `services.dart` :
+  - Change `games` list to transform it as a observable list.
+  - Create a `Game save(Game game)` method : Add new element when it's a new game and replace occurence otherwise ([Hint](#user-story-6-hints)).
+  
+2. Modify `x-game-edit` web component :
+  - Add a `save` method called when the user click on save button.
+  
+3. Modify `index.html` :
+  - Add the custom element `gameId`   
+  
+4. Yeah ! So many games to add !
+
+![x-game-edit newgame](docs/img/x-game-edit-newgame.png)
+ 
+ 
+<a name="user-story-6-hints"></a>
+> **Hints:** 
+> You can use `map` and `fold` methods on `games` list to find next id .
+  
 
 <a name="user-story-7"></a>
 ## 7. Delete a game
