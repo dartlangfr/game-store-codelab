@@ -181,13 +181,11 @@ _**Keywords**: template loop, custom attribute, nested template_
     ```
 3. Iterate over the games list
   - Import `x-game` component in your `games.html` file and to be able to reused it.
-  
   - Loop over games using a template loop and reusing the `x-game` component
 
     ```HTML
     <x-game game="{{game}}"></x-game>
     ```
-
 4. Congrats! You have more games!
 
     ![x-games list](docs/img/x-games-list.png)
