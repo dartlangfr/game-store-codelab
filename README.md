@@ -214,10 +214,7 @@ _**Keywords**: Template conditionals_
   - Copy `GAMES_TEMPLATE_COMPACT` template and display it when `isCompact` is true. ([Hints](#user-story-4-hints))
   
 2. Manage the change of view.  
-  - In `games.dart`, add a toggle method to change `isCompact` value :
-  ```Dart
-  compact(Event e, var detail, Element target) => isCompact = !isCompact;
-  ```
+  - In `games.dart`, add a toggle method `compact` to change `isCompact` value.
   - In `games.html`, call the `compact` method when the user click on switch view button.
   
 3. Great ! Needless to scroll down to see all your games
@@ -253,7 +250,8 @@ _**Keywords**: Custom element_
   - Create a `Game save(Game game)` method : Add new element when it's a new game and replace occurence otherwise ([Hint](#user-story-6-hints)).
   
 2. Modify `x-game-edit` web component :
-  - Add a `save` method called when the user click on save button.
+  - Add a `save` method which call `save` method from `GameStoreService`.
+  - Call this method when the user click on save button.
   
 3. Modify `index.html` :
   - Add the custom element `gameId`   
