@@ -206,6 +206,28 @@ _**Keywords**: template loop, custom attribute, nested template_
 ## 4. Show the list of all games (compact template)
 > **Goal**: _As a user, I want to see the list of all games with an alternative compact template_
 
+_**Keywords**: Template conditionals_
+
+1. Modify `x-games` to deal with compact view 
+  - Add a observable boolean field `isCompact` in `game.dart`
+  - Use a template condition to display full view when `isCompact` is false. ([Hint](https://www.dartlang.org/polymer-dart/#template-conditionals)]).
+  - Copy `GAMES_TEMPLATE_COMPACT` template and display it when `isCompact` is true. ([Hints](#user-story-3-hints))
+  
+2. Manage the change of view.  
+  - In `game.dart`, add a toggle method to change `isCompact` value :
+  ```Dart
+  compact(Event e, var detail, Element target) => isCompact = !isCompact;
+  ```
+  - In `games.html`, call the `compact` method when the user click on compact button.
+  
+ 3. Great ! Needless to scroll down to see all your games
+ 
+![x-games list](docs/img/x-games-compact.png)
+ 
+<a name="user-story-4-hints"></a>
+> **Hints:** 
+> The condition template does not support else, so do not hesitate to use two if conditions.
+
 <a name="user-story-5"></a>
 ## 5. Edit the content of an existing game
 > **Goal**: _As a user, I want to edit the content of an existing game_
