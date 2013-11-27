@@ -219,18 +219,22 @@ _**Keywords**: Template conditionals_
   compact(Event e, var detail, Element target) => isCompact = !isCompact;
   ```
   - In `games.html`, call the `compact` method when the user click on switch view button.
-  - Change the button class to depends on `isCompact` value :
-  
-  ```HTML
-  class="icon-white {{ {'icon-th-list' : !isCompact , 'icon-th' : isCompact } }}
-  ```
   
 3. Great ! Needless to scroll down to see all your games
  
 ![x-games compact](docs/img/x-games-compact.png)
  
+> **Bonus:** 
+> 
+> Change the button class to depends on `isCompact` value :
+>  
+>  ```HTML
+>  class="icon-white {{ {'icon-th-list' : !isCompact , 'icon-th' : isCompact } }}
+>  ``` 
+ 
 <a name="user-story-4-hints"></a>
-> **Hints:** 
+> **Hints:**
+>  
 > The condition template does not support else, so do not hesitate to use two if conditions.
 
 <a name="user-story-5"></a>
@@ -241,7 +245,7 @@ _**Keywords**: Template conditionals_
 ## 6. Add a new game
 > **Goal**: _As a user, I want to add a new game_
 
-_**Keywords**: Custom element _
+_**Keywords**: Custom element_
 
 
 1. Modify `services.dart` :
