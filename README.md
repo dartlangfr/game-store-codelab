@@ -14,14 +14,14 @@ The goal of this codelab is to develop a game store application from a html temp
 ## Prerequisites
 Before you begin this codelab, you should have the last [Dart Editor][1] Setup ready.
 
-## Templates
-**TODO**
-
 ## Useful links
 - [A Tour of the Dart Language][2]
 - [Dart API Reference][3]
 - [Polymer.dart][4]
 - [Polymer.dart examples][6]
+
+## Templates
+**TODO**
 
 # User stories
 This codelab is divided into the following sections:
