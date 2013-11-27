@@ -179,7 +179,7 @@ _**Keywords**: template loop, custom attribute, nested template_
 
     ```Dart
     List<Game> games = gameStoreService.getAll();
-    ```
+    ```    
 3. Iterate over the games list
   - Import `x-game` component in your `games.html` file and to be able to reused it.
   - Loop over games using a template loop and reusing the `x-game` component like this ([Hints](#user-story-2-hints)):
@@ -214,13 +214,18 @@ _**Keywords**: Template conditionals_
   - Copy `GAMES_TEMPLATE_COMPACT` template and display it when `isCompact` is true. ([Hints](#user-story-3-hints))
   
 2. Manage the change of view.  
-  - In `game.dart`, add a toggle method to change `isCompact` value :
+  - In `games.dart`, add a toggle method to change `isCompact` value :
   ```Dart
   compact(Event e, var detail, Element target) => isCompact = !isCompact;
   ```
-  - In `games.html`, call the `compact` method when the user click on compact button.
+  - In `games.html`, call the `compact` method when the user click on switch view button.
+  - Change the button class to depends on `isCompact` value :
   
- 3. Great ! Needless to scroll down to see all your games
+  ```HTML
+  class="icon-white {{ {'icon-th-list' : !isCompact , 'icon-th' : isCompact } }}
+  ```
+  
+3. Great ! Needless to scroll down to see all your games
  
 ![x-games list](docs/img/x-games-compact.png)
  
