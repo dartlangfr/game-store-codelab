@@ -245,12 +245,15 @@ _**Keywords**: two-way databinding, observable, event handler_
     - `sortField` is set from the `data-field` attribute in the target element ([Hints](#user-story-3-hints))
     - `sortAscending` is reverted each time a button is clicked
   - Use this `sortBy` filter function in template loop binding
+
     ```Dart
     sortBy(String field, bool ascending) => (Iterable games) {
       var list = games.toList()..sort(Game.getComparator(field));
       return ascending ? list : list.reversed;
     };
     ```
+4. Try to sort and filter the games  
+    ![x-games list](docs/img/x-games-list-filter.png)
 
 <a name="user-story-3-hints"></a>
 > **Hints:**
