@@ -19,6 +19,7 @@ Before you begin this codelab, you should have the last [Dart Editor][1] Setup r
 - [Dart API Reference][3]
 - [Polymer.dart][4]
 - [Polymer.dart examples][6]
+- [Route library][7]
 
 ## Templates
 **TODO**
@@ -46,3 +47,4 @@ _Thanks to Thierry Lau for his AngularJS project [AngularMovie](https://github.c
   [4]: https://www.dartlang.org/polymer-dart/
   [5]: http://pub.dartlang.org/packages/polymer_expressions
   [6]: https://github.com/sethladd/dart-polymer-dart-examples/tree/master/web
+  [7]: http://pub.dartlang.org/packages/route
