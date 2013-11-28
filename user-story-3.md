@@ -48,7 +48,7 @@ _**Keywords**: two-way databinding, observable, event handler_
 > **Hints:**
 >
 > - In this user story, attributes should be **Observable**, when the value changed, bindings should be notified (See [Data binding](https://www.dartlang.org/polymer-dart/#data-binding))
-> - Dynamic filter function with bound parameters must return a filter function
+> - Dynamic filter function with bound parameters must return a filter function Oo
 > - An event handler is a three parameter methods defined in the custom element class (See  [Event Handlers](https://www.dartlang.org/docs/tutorials/polymer-intro/#event-handlers))  
 >   `myClickHandler(Event e, var detail, Element target)`
 >   - An `Event` that contains information about the event, such as its type and when it occurred.
