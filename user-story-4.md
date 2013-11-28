@@ -18,7 +18,7 @@ _**Keywords**: conditional template_
     ```Dart
     compact(Event e, var detail, Element target) => isCompact = !isCompact;
     ```
-  - In `games.html`, use a conditional templates to display the right template ([Hints](#hints))
+  - In `games.html`, use conditional templates to display the right template ([Hints](#hints))
     - `GAMES_TEMPLATE_COMPACT` when `isCompact` is `true`
     - `GAMES_TEMPLATE_DETAILED` when `isCompact` is `false`
 3. Great! Needless to scroll down to see all your games  
