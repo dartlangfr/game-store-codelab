@@ -15,7 +15,8 @@ _**Keywords**: custom event_
   - In `x-games` element, handle `my-delete-event` from the `x-game` element
   - Implement the handler to delete the game using `gameStoreService`
 4. One Game to rule them all!  
-  **TODO: image**
+  ![Game delete](docs/img/x-games-delete.png)
+
 
 <a name="hints"></a>
 > **Hints:**
