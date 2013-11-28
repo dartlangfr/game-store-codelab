@@ -12,7 +12,7 @@
 2. Update `x-game-edit` element
   - Add a `save` event handler which call `save` method in `gameStoreService`.
   - Bind this handler on save button click.
-3. Update `index.html`, remove the `gameId` attribute and try to save
+3. Update `index.html`, remove the `gameId` attribute and try to save a game
 
   ```HTML
   <x-game-edit></x-game-edit>
