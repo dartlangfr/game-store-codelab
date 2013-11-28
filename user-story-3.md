@@ -56,10 +56,10 @@ _**Keywords**: two-way databinding, observable, event handler_
 >   }
 >   ```
 > - An event handler is a three parameter methods defined in the custom element class (See  [Event Handlers](https://www.dartlang.org/docs/tutorials/polymer-intro/#event-handlers))  
->   `myClickHandler(Event e, var detail, Element target)`
+>   `myEventHandler(Event e, var detail, Element target)`
 >   - An `Event` that contains information about the event, such as its type and when it occurred.
 >   - The detail object can provide additional, event-specific information.
->   - The `Node` that fired the event�the Start button in this case.
+>   - The `Node` that fired the event.
 > - [Element.dataset](https://api.dartlang.org/docs/channels/stable/latest/dart_html/Element.html#dataset) allows access to all custom data attributes (data-*) set on this element.
 > - [List](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html) and [Iterable](https://api.dartlang.org/docs/channels/stable/latest/dart_core/Iterable.html) methods are your friends ;)
 
