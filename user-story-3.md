@@ -21,9 +21,7 @@ _**Keywords**: two-way databinding, observable, event handler_
     ```
 2. Filter the game list when typing text in search input
     - Add a `search` attribute in `games.dart` and bind it to the search input value ([Hints](#user-story-3-hints))
-    - Implement a filter function `filterSearch` that allows to filter a games sequence and use it in the template loop binding ([Hints](#user-story-3-hints)):
-
-    ```HTML
+    - Implement a filter function `filterSearch` that allows to filter a games sequence and use it in the template loop binding ([Hints](#user-story-3-hints)):```HTML
     <template repeat="{{game in games | filterSearch(search)}}">
     ```
 3. Sort games list when clicking on _Sort by name_ or _Sort by rating_ buttons
@@ -64,3 +62,5 @@ _**Keywords**: two-way databinding, observable, event handler_
 >   - The `Node` that fired the event�the Start button in this case.
 > - [Element.dataset](https://api.dartlang.org/docs/channels/stable/latest/dart_html/Element.html#dataset) allows access to all custom data attributes (data-*) set on this element.
 > - [List](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html) and [Iterable](https://api.dartlang.org/docs/channels/stable/latest/dart_core/Iterable.html) methods are your friends ;)
+
+## [Next >](user-story-4.md)
