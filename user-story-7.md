@@ -12,7 +12,11 @@ _**Keywords**: custom event_
   - In `x-game` element, handle click on trash button
   - Fire a custom event `my-delete-event` embedding the game instance ([Hints](#hints))
 3. Handle the custom event
-  - In `x-games` element, handle `my-delete-event` from the `x-game` element
+  - In `x-games` element, handle `my-delete-event`
+
+    ```HTML
+    <x-game game="{{game}}" ???="{{delete}}"></x-game>
+    ```
   - Implement the handler to delete the game using `gameStoreService`
 4. One Game to rule them all!  
   ![Game delete](docs/img/x-games-delete.png)
