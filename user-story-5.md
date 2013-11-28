@@ -28,7 +28,7 @@ _**Keywords**: two-way databinding, two-way filter_
     - else set `game` with the retrieved game
 3. Bind `game` fields to edit them
   - Check the DartEditor console when editing the rating and fix the error ([Hints](#hints))
-  - When editing the game, the values should dynamicaly change in the games list below ([Hints](#hints))
+  - When editing the game, the values should dynamically change in the games list below ([Hints](#hints))
 
     ![x-game-edit](docs/img/x-game-edit.png)
 
