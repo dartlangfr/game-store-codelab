@@ -7,7 +7,6 @@ _**Keywords**: template conditional_
   - In `games.html`, add `GAMES_TEMPLATE_COMPACT` HTML blocks
   - Recreate a template loop for it and bind game fields  
     ![x-games both templates](docs/img/x-games-bothtemplates.png)
-
 2. Switch between templates
   - In `games.dart`, add an observable field `isCompact`
 
@@ -24,12 +23,12 @@ _**Keywords**: template conditional_
     - `GAMES_TEMPLATE_DETAILED` when `isCompact` is `false`
 3. Great! Needless to scroll down to see all your games  
   ![x-games compact template](docs/img/x-games-compact.png)
- 
+
 <a name="hints"></a>
 > **Hints:**
 > 
 > - See [Template conditionals](https://www.dartlang.org/polymer-dart/#template-conditionals)
- 
+>
 > **Bonus:** 
 > 
 > - Switch the toggle button class between `icon-th-list` and `icon-th`
