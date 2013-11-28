@@ -9,7 +9,7 @@ _**Keywords**: router, url pattern_
     dependencies:
         route: any
     ```
-2. Create a new custom element `x-route` ([Hint](#user-story-8-hints))
+2. Create a new custom element `x-route` ([Hints](#hints))
   - Create `route.html` and `route.dart` files. Copy this class as it is:  
 
     ```Dart
@@ -65,7 +65,7 @@ _**Keywords**: router, url pattern_
 6. Now you can bookmark your games list!  
   ![x-router games](docs/img/x-router-games.png)
 
-<a name="user-story-8-hints"></a>
+<a name="hints"></a>
 > **Hints:**
 >
 > - Read sample of [Client routing](http://pub.dartlang.org/packages/route)
