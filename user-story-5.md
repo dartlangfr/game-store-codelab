@@ -1,7 +1,7 @@
 ## 5. Edit the content of an existing game
 > **Goal**: _As a user, I want to edit the content of an existing game_
 
-_**Keywords**: two-way databinding, two-way filter_
+_**Keywords**: two-way data binding, two-way filter_
 
 1. Create a new custom element `x-game-edit`
   - Create `game-edit.html` and `game-edit.dart` files and copy the `GAME_EDIT_TEMPLATE` html blocks from the templates into its body  
@@ -30,7 +30,7 @@ _**Keywords**: two-way databinding, two-way filter_
   - In `game-edit.html`, bind `game` fields to input values ([Hints](#hints))  
     _When editing the game, the values should dynamically change in the games list below_
   - Check the DartEditor console when editing the rating. Fix the error ([Hints](#hints))
-4. Enjoy the powerful of databinding!
+4. Enjoy the powerful of data binding!
     ![x-game-edit](docs/img/x-game-edit.png)
 
 <a name="hints"></a>
