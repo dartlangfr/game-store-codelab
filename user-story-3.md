@@ -21,17 +21,10 @@ _**Keywords**: two-way databinding, observable, event handler_
     ```
 2. Filter the game list when typing text in search input
     - Add a `search` attribute in `games.dart` and bind it to the search input value ([Hints](#user-story-3-hints))
-    - Implement a dynamic filter function that allow to filter a games sequence when the given parameter change
+    - Implement a filter function `filterSearch` that allows to filter a games sequence and use it in the template loop binding ([Hints](#user-story-3-hints)):
 
-    ```Dart
-    filterSearch(String search) {
-      return (Iterable games) => ???;
-    }
-    ```
-    - Use this filter in template loop binding
-    
     ```HTML
-    {{game in games | ???}}}
+    <template repeat="{{game in games | filterSearch(search)}}">
     ```
 3. Sort games list when clicking on _Sort by name_ or _Sort by rating_ buttons
   - In `games.html`, bind click events to `sort` handler
@@ -40,16 +33,13 @@ _**Keywords**: two-way databinding, observable, event handler_
     <button class="btn btn-info" on-click="{{sort}}" data-field="name">Sort by name</button>
     <button class="btn btn-info" on-click="{{sort}}" data-field="rating">Sort by rating</button>
     ```
-  - In `games.dart`, add a click handler `sort` that set two new fields `sortField` and `sortAscending`
+  - In `games.dart`, implement the click handler `sort` that sets two new fields `sortField` and `sortAscending`
     - `sortField` is set from the `data-field` attribute in the target element ([Hints](#user-story-3-hints))
-    - `sortAscending` is reverted each time a button is clicked
-  - Use this `sortBy` filter function in template loop binding
+    - `sortAscending` is reversed each time a button is clicked
+  - Implement a filter function `sortBy` that sorts a games sequence and use it in the template loop binding ([Hints](#user-story-3-hints)):
 
-    ```Dart
-    sortBy(String field, bool ascending) => (Iterable games) {
-      var list = games.toList()..sort(Game.getComparator(field));
-      return ascending ? list : list.reversed;
-    };
+    ```HTML
+    <template repeat="{{game in games | filterSearch(search) | sortBy(sortField, sortAscending)}}">
     ```
 4. Try to sort and filter the games  
     ![x-games list](docs/img/x-games-list-filter.png)
@@ -58,9 +48,11 @@ _**Keywords**: two-way databinding, observable, event handler_
 > **Hints:**
 >
 > - In this user story, attributes should be **Observable**, when the value changed, bindings should be notified (See [Data binding](https://www.dartlang.org/polymer-dart/#data-binding))
+> - Dynamic filter function with bound parameters must return a filter function
 > - An event handler is a three parameter methods defined in the custom element class (See  [Event Handlers](https://www.dartlang.org/docs/tutorials/polymer-intro/#event-handlers))  
 >   `myClickHandler(Event e, var detail, Element target)`
 >   - An `Event` that contains information about the event, such as its type and when it occurred.
 >   - The detail object can provide additional, event-specific information.
->   - The `Node` that fired the event—the Start button in this case.
+>   - The `Node` that fired the eventï¿½the Start button in this case.
 > - [Element.dataset](https://api.dartlang.org/docs/channels/stable/latest/dart_html/Element.html#dataset) allows access to all custom data attributes (data-*) set on this element.
+> - [List](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html) and [Iterable](https://api.dartlang.org/docs/channels/stable/latest/dart_core/Iterable.html) methods are your friends ;)
