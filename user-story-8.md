@@ -13,7 +13,7 @@ _**Keywords**: router, url pattern, handler_
     - `#/games/new` : create a new game
   - Create handler for eaches.  
   - Create a router.  
-  - In `route.html`, create 2 templates conditions : one to display `x-games`, the other for `x-game-edit`.  
+  - In `route.html`, create 2 templates conditions according to url : one to display `x-games`, the other for `x-game-edit`.  
   
 3. In `index.html`, use `x-route` instead of `x-game-edit` and `x-games`.
 
@@ -26,7 +26,7 @@ _**Keywords**: router, url pattern, handler_
 >
 > - Read sample of [Client routing](http://pub.dartlang.org/packages/route)
 > - You need to create a `Route` class that wrap `UrlPattern` and url params list.
->   Implements operator [] in `Route` to help you to find paramater at index position. 
+> - Implements operator [] in `Route` to help you to find paramater at index position. 
 
 ## [End >](end.md)
 
