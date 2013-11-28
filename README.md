@@ -20,7 +20,7 @@ Before you begin this codelab, you should have the last [Dart Editor][1] Setup r
 - [Polymer.dart][4]
 - [Polymer.dart examples][5]
 
-## Templates
+# Templates
 **TODO**
 
 # User stories
