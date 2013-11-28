@@ -18,7 +18,7 @@ Before you begin this codelab, you should have the last [Dart Editor][1] Setup r
 - [A Tour of the Dart Language][2]
 - [Dart API Reference][3]
 - [Polymer.dart][4]
-- [Polymer.dart examples][6]
+- [Polymer.dart examples][5]
 
 ## Templates
 **TODO**
@@ -35,8 +35,8 @@ This codelab is divided into the following sections:
 7. [Delete a game](user-story-7.md)
 8. [Single-page application](user-story-8.md)
 
-# Summary
-Congratulations, you've completed this codelab and have created a single page application with Dart and Polymer.
+# Credits
+**TODO**
 
 _Thanks to Thierry Lau for his AngularJS project [AngularMovie](https://github.com/lauterry/angularmovie) on which we take as example._
 
@@ -44,5 +44,4 @@ _Thanks to Thierry Lau for his AngularJS project [AngularMovie](https://github.c
   [2]: https://www.dartlang.org/docs/dart-up-and-running/contents/ch02.html
   [3]: http://api.dartlang.org/docs/channels/stable/latest/
   [4]: https://www.dartlang.org/polymer-dart/
-  [5]: http://pub.dartlang.org/packages/polymer_expressions
-  [6]: https://github.com/sethladd/dart-polymer-dart-examples/tree/master/web
+  [5]: https://github.com/sethladd/dart-polymer-dart-examples/tree/master/web
