@@ -9,12 +9,13 @@ TODO:
 - Publish on gh-pages branches and add a link to the template
 -->
 # Introduction
-The goal of this codelab is to develop a game store application from a html template. Users will be able to manage the games in the store.
+The goal of this codelab is to develop a game store application. Users will be able to manage games in the store.  
+Don't worry, HTML templates are provided ;)
 
-## Prerequisites
+### Prerequisites
 Before you begin this codelab, you should have the last [Dart Editor][1] Setup ready.
 
-## Useful links
+### Useful links
 - [A Tour of the Dart Language][2]
 - [Dart API Reference][3]
 - [Polymer.dart][4]
