@@ -6,7 +6,7 @@ _**Keywords**: custom element, template, binding, filter function_
 1. Create a new Polymer application named `game_store_codelab` and explore it
   - Fill the _Application name_ and select _Web application (using the polymer library)_  
     ![Project creation](/docs/img/project-creation.png)
-  - `pubspec.yaml` includes a new dependency
+  - Open `pubspec.yaml`. It includes a new dependency:
   
     ```YAML
     dependencies:
@@ -102,5 +102,5 @@ _**Keywords**: custom element, template, binding, filter function_
 > 
 > - Don't forget to add needed tags in `index.html` header
 > - To apply styles from the document to the contents of a custom element, add this getter in its dart class: `bool get applyAuthorStyles => true;`
-> - Use a filter function to uppercase the game name, defined in the custom element class (See [Polymer expressions][5])
-> - Use also a filter function to transform the rating integer to &#9733; characters (See [List.generate](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html#generate) and [List.join](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html#join))
+> - Implement a filter function to uppercase the game name, defined in the custom element class (See [Polymer expressions][5])
+> - Implement also a filter function to transform the rating integer to &#9733; characters ([List.generate](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html#generate) and [List.join](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html#join) may help)
