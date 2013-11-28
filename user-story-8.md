@@ -62,7 +62,7 @@ _**Keywords**: router, url pattern_
   - Check if the current `route.url` is the expected `UrlPattern`  
   - Don't forget to set the `gameId` attribute from the parsed parameters
 5. In `index.html`, use `x-route` instead of `x-game-edit` and `x-games`.
-6. Now you can bookmark your games list !  
+6. Now you can bookmark your games list!  
   ![x-router games](docs/img/x-router-games.png)
 
 <a name="user-story-8-hints"></a>
