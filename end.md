@@ -4,6 +4,8 @@ Congratulations, you've completed this codelab and have created a single page ap
 ## Feedback
 **TODO**
 
+If you've got a few minutes, would you mind filling out an anonymous feedback form on the course so we can improve it in future?
+
 ## Solutions
 
 1. [Show the content of a game](../../compare/master...user-story-1)
