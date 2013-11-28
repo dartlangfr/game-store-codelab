@@ -101,8 +101,12 @@ _**Keywords**: custom element, template, binding, filter function_
 > **Hints:**
 > 
 > - Don't forget to add needed tags in `index.html` header
-> - To apply styles from the document to the contents of a custom element, add this getter in its dart class: `bool get applyAuthorStyles => true;`
-> - Implement a filter function to uppercase the game name, defined in the custom element class (See [Polymer expressions][5])
+> - To apply styles from the document to the contents of a custom element, add this getter in its dart class: 
+>
+>   ```Dart
+>   bool get applyAuthorStyles => true;`
+>   ```
+> - Implement a filter function to uppercase the game name, defined in the custom element class (See [Polymer expressions](http://pub.dartlang.org/packages/polymer_expressions))
 > - Implement also a filter function to transform the rating integer to &#9733; characters ([List.generate](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html#generate) and [List.join](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html#join) may help)
 
 ## [Next >](user-story-2.md)
