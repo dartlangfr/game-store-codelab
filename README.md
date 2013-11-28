@@ -21,11 +21,16 @@ Before you begin this codelab, you should have the last [Dart Editor][1] Setup r
 - [Polymer.dart examples][5]
 
 # Templates
-**TODO**
+The [Template HTML page][6] is composed of three main template blocks
 
-[Live Template](http://htmlpreview.github.io/?https://raw.github.com/ggirou/game-store-codelab/master/template/index.html)
+- `GAME_TEMPLATE` displays the content of a game
+- `GAMES_TEMPLATE` displays a toolbar and the games list:
+  - The toolbar allows to search, filter, sort games and switch between the templates below
+  - `GAMES_TEMPLATE_DETAILED` displays the games list reusing the `GAME_TEMPLATE`
+  - `GAMES_TEMPLATE_COMPACT` displays the games list with a compact template
+- `GAME_EDIT_TEMPLATE` displays a form to edit a game
 
-[Template HTML Code](../../blob/master/template/index.html)
+See the [Live preview][6] and the [HTML source](../../blob/master/template/index.html)
 
 # User stories
 This codelab is divided into the following sections:
@@ -49,3 +54,4 @@ _Thanks to Thierry Lau for his AngularJS project [AngularMovie](https://github.c
   [3]: http://api.dartlang.org/docs/channels/stable/latest/
   [4]: https://www.dartlang.org/polymer-dart/
   [5]: https://github.com/sethladd/dart-polymer-dart-examples/tree/master/web
+  [6]: http://htmlpreview.github.io/?https://raw.github.com/ggirou/game-store-codelab/master/template/index.html
