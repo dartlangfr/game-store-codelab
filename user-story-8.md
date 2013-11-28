@@ -1,21 +1,49 @@
 ## 8. Single-page application
 > **Goal**: _As a user, I want to navigate through pages without reloading the application._
 
-_**Keywords**: router, url pattern, handler_
+_**Keywords**: router, url pattern_
 
-1. Add `route` dependency un `pubspec.yaml`
+1. Add `route` dependency in `pubspec.yaml`
+
+    ```YAML
+    dependencies:
+        route: any
+    ```
 2. Create a new custom element `x-route` ([Hint](#user-story-8-hints))
-  - Create `route.html` and `route.dart` files
-  - In `route.dart`, define 3 patterns to recognize urls like this :
-    - `#/games` : list all games
-    - `#/game/1` : show game with id=1
-    - `#/games/new` : create a new game
-  - Create handler for eaches.  
-  - Create a router. 
-  - In `route.html`, create 2 templates conditions according to url : one to display `x-games`, the other for `x-game-edit`.
-  - Use this class to help you to find parameter at index position.
+  - Create `route.html` and `route.dart` files. Copy this class as it is:  
 
     ```Dart
+    import 'package:polymer/polymer.dart';
+    import 'package:route/client.dart';
+    
+    @CustomTag('x-route')
+    class XRoute extends PolymerElement {
+      // Whether styles from the document apply to the contents of the component
+      bool get applyAuthorStyles => true;
+      XRoute.created() : super.created() {
+        var router = new Router()
+          ..addHandler(gamesUrl, _routeHandler(gamesUrl))
+          ..addHandler(gameUrl, _routeHandler(gameUrl))
+          ..addHandler(newGameUrl, _routeHandler(newGameUrl))
+          ..listen();
+    
+        route = new Route(gamesUrl);
+      }
+      
+      final gamesUrl = new UrlPattern(r'/(.*)#/games');
+      final gameUrl = new UrlPattern(r'/(.*)#/games/(\d+)');
+      final newGameUrl = new UrlPattern(r'/(.*)#/games/new');
+    
+      @observable Route route;
+    
+      Handler _routeHandler(UrlPattern url) => (String path) {
+        print("Route changed: $url - $path");
+        route = new Route(url, url.parse(path));
+      };
+      
+      int asInt(String value) => int.parse(value);
+    }
+    
     class Route {
       final UrlPattern url;
       final List params;
@@ -23,10 +51,19 @@ _**Keywords**: router, url pattern, handler_
       operator [](int index) => index < params.length ? params[index] : null;
     }
     ```
-3. In `index.html`, use `x-route` instead of `x-game-edit` and `x-games`.
-4. Now you can bookmark your games list !
-
-![x-router games](docs/img/x-router-games.png)
+3. Explore this class
+  - When one of registered `UrlPattern` is handled on url change, the `route` attribute is updated. There is already three registered patterns:
+    - `#/games`: to show the games list
+    - `#/game/1`: to edit the game with id=1
+    - `#/games/new`: to create a new game
+  - The `Route` class contains the handled `UrlPattern` and the parsed parameters.
+  - In databindings, parameters can be retrieved with this syntax: `route[1]` where `1` is the group index in regex
+4. In `route.html`, create two contidionnal templates to switch between `x-games` element and `x-game-edit`.
+  - Check if the current `route.url` is the expected `UrlPattern`  
+  - Don't forget to set the `gameId` attribute from the parsed parameters
+5. In `index.html`, use `x-route` instead of `x-game-edit` and `x-games`.
+6. Now you can bookmark your games list!  
+  ![x-router games](docs/img/x-router-games.png)
 
 <a name="user-story-8-hints"></a>
 > **Hints:**
@@ -35,4 +72,3 @@ _**Keywords**: router, url pattern, handler_
 
 
 ## [End >](end.md)
-
