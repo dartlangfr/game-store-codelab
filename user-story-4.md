@@ -32,6 +32,6 @@ _**Keywords**: conditional template_
 >
 > **Bonus:** 
 > 
-> - Switch the toggle button class between `icon-th-list` and `icon-th`
+> - Switch the toggle button class between `icon-th-list` and `icon-th` in function of `isCompact` value
 
 ## [Next >](user-story-5.md)
