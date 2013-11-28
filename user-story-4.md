@@ -36,6 +36,5 @@ _**Keywords**: template conditional_
 > **Hints:**
 > 
 > - See [Template conditionals](https://www.dartlang.org/polymer-dart/#template-conditionals)
-> - The condition template does not support else, so do not hesitate to use two if conditions.
 
 ## [Next >](user-story-5.md)
