@@ -1,8 +1,6 @@
 ## 6. Add a new game
 > **Goal**: _As a user, I want to add a new game_
 
-_**Keywords**: Custom element_
-
 1. Implement `save` in `services.dart` ([Hints](#hints))
 
   ```Dart
