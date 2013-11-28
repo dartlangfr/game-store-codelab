@@ -1,6 +1,7 @@
 ## 8. Single-page application
 > **Goal**: _As a user, I want to navigate through pages without reloading the application._
 
+<<<<<<< HEAD
 _**Keywords**: router, url pattern, handler_
 
 1. Add `route` dependency un `pubspec.yaml`
@@ -19,8 +20,14 @@ _**Keywords**: router, url pattern, handler_
 
 4. Awesome ! You have completed the Game Store !
 
+![x-router games](docs/img/x-router-games.png)
+
 <a name="user-story-8-hints"></a>
 > **Hints:**
 >
 > - Read sample of [Client routing](http://pub.dartlang.org/packages/route)
 > - You need to create a `Route` class
+> TODO
+
+## [End >](end.md)
+

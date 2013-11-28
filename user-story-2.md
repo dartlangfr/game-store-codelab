@@ -1,7 +1,7 @@
 ## 2. Show the list of all games (detailed template)
 > **Goal**: _As a user, I want to see the list of all games with a detailed template_
 
-_**Keywords**: template loop, custom attribute, nested template_
+_**Keywords**: template loop, custom attribute, nested component_
 
 1. Create a new custom element `x-games` 
   - Create `games.html` and `games.dart` files and copy the `GAMES_TEMPLATE`  html blocks from the templates into its body  
@@ -34,8 +34,8 @@ _**Keywords**: template loop, custom attribute, nested template_
     List<Game> games = gameStoreService.games;
     ```    
 3. Iterate over the games list
-  - Import `x-game` component in your `games.html` file and to be able to reused it.
-  - Loop over games using a template loop and reusing the `x-game` component like this ([Hints](#user-story-2-hints)):
+  - Import `x-game` component in your `games.html` file to be able to reused it.
+  - Loop over games with a template loop and reuse the `x-game` component like this ([Hints](#user-story-2-hints)):
 
     ```HTML
     <x-game game="{{game}}"></x-game>
@@ -48,5 +48,7 @@ _**Keywords**: template loop, custom attribute, nested template_
 <a name="user-story-2-hints"></a>
 > **Hints:**
 >
-> - Try first to display the names of the games.
+> - Try first to display only the names.
 > - The `game` attribute in `x-game` should be a public attribute. (See [Custom Attributes](https://www.dartlang.org/polymer-dart/#custom-attributes))
+
+## [Next >](user-story-3.md)

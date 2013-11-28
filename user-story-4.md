@@ -28,3 +28,5 @@ _**Keywords**: Template conditionals_
 > **Hints:**
 >  
 > The condition template does not support else, so do not hesitate to use two if conditions.
+
+## [Next >](user-story-5.md)
