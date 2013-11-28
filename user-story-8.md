@@ -4,7 +4,6 @@
 _**Keywords**: router, url pattern, handler_
 
 1. Add `route` dependency un `pubspec.yaml`
-
 2. Create a new custom element `x-route` ([Hint](#user-story-8-hints))
   - Create `route.html` and `route.dart` files
   - In `route.dart`, define 3 patterns to recognize urls like this :
@@ -14,18 +13,17 @@ _**Keywords**: router, url pattern, handler_
   - Create handler for eaches.  
   - Create a router. 
   - In `route.html`, create 2 templates conditions according to url : one to display `x-games`, the other for `x-game-edit`.
-  - Use this class to help you to find paramater at index position.  
-    ```Dart
-	class Route {
-  	  final UrlPattern url;
-  	  final List params;
-  	  Route(this.url, [this.params = const []]);
-  	  operator [](int index) => index < params.length ? params[index] : null;
-	}
-    ``` 
-  
-3. In `index.html`, use `x-route` instead of `x-game-edit` and `x-games`.
+  - Use this class to help you to find paramater at index position.
 
+    ```Dart
+    class Route {
+      final UrlPattern url;
+      final List params;
+      Route(this.url, [this.params = const []]);
+      operator [](int index) => index < params.length ? params[index] : null;
+    }
+    ```
+3. In `index.html`, use `x-route` instead of `x-game-edit` and `x-games`.
 4. Now you can bookmark your games list !
 
 ![x-router games](docs/img/x-router-games.png)
