@@ -58,7 +58,7 @@ _**Keywords**: two-way databinding, observable, event handler_
 >     };
 >   }
 >   ```
-> - An event handler is a three parameter methods defined in the custom element class (See  [Event Handlers](https://www.dartlang.org/docs/tutorials/polymer-intro/#event-handlers))  
+> - An event handler is a three parameter method defined in the custom element class (See  [Event Handlers](https://www.dartlang.org/docs/tutorials/polymer-intro/#event-handlers))  
 >   `myEventHandler(Event e, var detail, Element target)`
 >   - An `Event` that contains information about the event, such as its type and when it occurred.
 >   - The detail object can provide additional, event-specific information.
