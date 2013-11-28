@@ -25,6 +25,6 @@ _**Keywords**: Custom element_
  
 <a name="hints"></a>
 > **Hints:** 
-> You must set the id for a new game. Use `map` and `fold` methods on `games` list to find next id.
+> You must set the id for a new game. Use [List.map](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html#map), [List.fold](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html#fold) and [max](https://api.dartlang.org/docs/channels/stable/latest/dart_math.html#max)
 
 ## [Next >](user-story-7.md)
