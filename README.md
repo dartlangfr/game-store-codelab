@@ -58,4 +58,4 @@ _Thanks to [+Thierry Lau](https://plus.google.com/+ThierryLAU) for his AngularJS
   [3]: http://api.dartlang.org/docs/channels/stable/latest/
   [4]: https://www.dartlang.org/polymer-dart/
   [5]: https://github.com/sethladd/dart-polymer-dart-examples/tree/master/web
-  [6]: http://htmlpreview.github.io/?https://raw.github.com/ggirou/game-store-codelab/master/template/index.html
+  [6]: http://dartlangfr.github.io/game-store-codelab/template/
