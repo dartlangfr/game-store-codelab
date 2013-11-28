@@ -45,7 +45,9 @@ This codelab is divided into the following sections:
 8. [Single-page application](user-story-8.md)
 
 # Credits
-**TODO**
+
+- [+Guillaume Girou](https://plus.google.com/+GuillaumeGirou), Dart Evangelist [@Sfeir](http://www.sfeir.com/)
+- [+Nicolas François](https://plus.google.com/+NicolasFrancois), Dart Evangelist [@Sfeir](http://www.sfeir.com/)
 
 _Thanks to Thierry Lau for his AngularJS project [AngularMovie](https://github.com/lauterry/angularmovie) on which we take as example._
 
