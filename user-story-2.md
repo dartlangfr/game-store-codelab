@@ -1,7 +1,7 @@
 ## 2. Show the list of all games (detailed template)
 > **Goal**: _As a user, I want to see the list of all games with a detailed template_
 
-_**Keywords**: template loop, custom attribute, nested template_
+_**Keywords**: template loop, custom attribute, nested component_
 
 1. Create a new custom element `x-games` 
   - Create `games.html` and `games.dart` files and copy the `GAMES_TEMPLATE`  html blocks from the templates into its body  
