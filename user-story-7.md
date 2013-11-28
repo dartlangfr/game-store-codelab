@@ -8,6 +8,7 @@ _**Keywords**: custom event_
   - Fire a custom event `my-delete-event` containing the game instance ([Hints](#hints))
 2. Handle the custom event
   - 
+3. Implement `delete` in `services.dart`
 
 
 <a name="hints"></a>
