@@ -20,7 +20,6 @@ Before you begin this codelab, you should have the last [Dart Editor][1] Setup r
 - [Dart API Reference][3]
 - [Polymer.dart][4]
 - [Polymer.dart examples][5]
-- [Route library][7]
 
 # Templates
 The [Template HTML page][6] is composed of three main template blocks
@@ -60,4 +59,3 @@ _Thanks to [+Thierry Lau](https://plus.google.com/+ThierryLAU) for his AngularJS
   [4]: https://www.dartlang.org/polymer-dart/
   [5]: https://github.com/sethladd/dart-polymer-dart-examples/tree/master/web
   [6]: http://htmlpreview.github.io/?https://raw.github.com/ggirou/game-store-codelab/master/template/index.html
-  [7]: http://pub.dartlang.org/packages/route
