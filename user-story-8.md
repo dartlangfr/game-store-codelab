@@ -1,7 +1,7 @@
 ## 8. Single-page application
 > **Goal**: _As a user, I want to navigate through pages without reloading the application._
 
-_**Keywords**: router, url pattern, handler_
+_**Keywords**: router, url pattern_
 
 1. Add `route` dependency in `pubspec.yaml`
 
