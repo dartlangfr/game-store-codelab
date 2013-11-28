@@ -13,7 +13,8 @@ _**Keywords**: two-way databinding, observable, event handler_
     }
     
     // Used for SORTING
-    static getComparator(String field) => _comparators.containsKey(field) ? _comparators[field] : (a, b) => 0;
+    static getComparator(String field) => 
+      _comparators.containsKey(field) ? _comparators[field] : (a, b) => 0;
     static final Map _comparators = {
       "name": (Game a, Game b) => a.name.compareTo(b.name),
       "rating": (Game a, Game b) => a.rating.compareTo(b.rating)
