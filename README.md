@@ -23,6 +23,10 @@ Before you begin this codelab, you should have the last [Dart Editor][1] Setup r
 # Templates
 **TODO**
 
+[Live Template](http://htmlpreview.github.io/?https://raw.github.com/ggirou/game-store-codelab/master/template/index.html)
+
+[Template HTML Code](../../blob/master/template/index.html)
+
 # User stories
 This codelab is divided into the following sections:
 
