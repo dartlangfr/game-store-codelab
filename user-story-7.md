@@ -13,7 +13,7 @@ _**Keywords**: custom event_
 <a name="hints"></a>
 > **Hints:**
 >
-> - **TODO** dispatchEvent
+> - Use [dispatchEvent](https://api.dartlang.org/docs/channels/stable/latest/dart_html/EventTarget.html#dispatchEvent) and [CustomEvent](https://api.dartlang.org/docs/channels/stable/latest/dart_html/CustomEvent.html)
 
 
 ## [Next >](user-story-8.md)
