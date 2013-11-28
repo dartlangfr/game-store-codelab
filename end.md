@@ -4,6 +4,11 @@ Congratulations, you've completed this codelab and have created a single page ap
 ## Feedback
 If you've got a few minutes, would you mind filling out an [anonymous feedback form **TODO**]() on the course so we can improve it in future?
 
+## Bonus user stories
+
+- Re-implement the `GameStoreService` with rest queries
+- Implement a server in Dart
+
 ## Solutions
 
 1. [Show the content of a game](../../compare/master...user-story-1)
