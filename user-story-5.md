@@ -1,7 +1,7 @@
 ## 5. Edit the content of an existing game
 > **Goal**: _As a user, I want to edit the content of an existing game_
 
-_**Keywords**: two-way databinding, two-way transformer_
+_**Keywords**: two-way databinding, two-way filter_
 
 1. Create a new custom element `x-game-edit`
   - Create `game-edit.html` and `game-edit.dart` files and copy the `GAME_EDIT_TEMPLATE` html blocks from the templates into its body  
@@ -26,10 +26,17 @@ _**Keywords**: two-way databinding, two-way transformer_
   - Retrieve the game to edit when the `gameId` attribute change ([Hints](#hints))
     - if `gameId` is null, set `game` with `new Game.sample()`
     - else set `game` with the retrieved game
+3. Bind `game` fields to edit them
+  - Check the DartEditor console when editing the rating and fix the error ([Hints](#hints))
+  - When editing the game, the values should dynamicaly change in the games list below ([Hints](#hints))
+
+    ![x-game-edit](docs/img/x-game-edit.png)
 
 <a name="hints"></a>
 > **Hints:**
 >
-> - 
+> - Use [onPropertyChange](https://api.dartlang.org/docs/channels/be/latest/observe.html#onPropertyChange) to execute a function when an observable property change
+> - To create a two-way filter, implement a `Transformer` class (No docs :( see [Bind number to text field with filter  example](https://github.com/sethladd/dart-polymer-dart-examples/tree/master/web/bind_number_to_text_field_with_filter))
+> - Remember what to do to notify bindings when value changed
 
 ## [Next >](user-story-6.md)
