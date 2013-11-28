@@ -1,7 +1,7 @@
 ## 4. Show the list of all games (compact template)
 > **Goal**: _As a user, I want to see the list of all games with an alternative compact template_
 
-_**Keywords**: template conditional_
+_**Keywords**: conditional template_
 
 1. Display compact template in games list
   - In `games.html`, add `GAMES_TEMPLATE_COMPACT` HTML blocks
