@@ -50,3 +50,5 @@ _**Keywords**: template loop, custom attribute, nested template_
 >
 > - Try first to display the names of the games.
 > - The `game` attribute in `x-game` should be a public attribute. (See [Custom Attributes](https://www.dartlang.org/polymer-dart/#custom-attributes))
+
+## [Next >](user-story-3.md)
