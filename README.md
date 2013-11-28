@@ -50,7 +50,8 @@ This codelab is divided into the following sections:
 - [+Guillaume Girou](https://plus.google.com/+GuillaumeGirou), Dart Evangelist [@Sfeir](http://www.sfeir.com/)
 - [+Nicolas François](https://plus.google.com/+NicolasFrancois), Dart Evangelist [@Sfeir](http://www.sfeir.com/)
 
-_Thanks to Thierry Lau for his AngularJS project [AngularMovie](https://github.com/lauterry/angularmovie) on which we take as example._
+_Thanks to [+DartlangFr](http://gplus.to/dartlangfr) team_  
+_Thanks to [+Thierry Lau](https://plus.google.com/+ThierryLAU) for his AngularJS project [AngularMovie](https://github.com/lauterry/angularmovie) on which we take as example._
 
   [1]: https://www.dartlang.org/
   [2]: https://www.dartlang.org/docs/dart-up-and-running/contents/ch02.html
