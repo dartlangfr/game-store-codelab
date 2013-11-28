@@ -13,7 +13,7 @@ _**Keywords**: router, url pattern, handler_
   - Create handler for eaches.  
   - Create a router. 
   - In `route.html`, create 2 templates conditions according to url : one to display `x-games`, the other for `x-game-edit`.
-  - Use this class to help you to find paramater at index position.
+  - Use this class to help you to find parameter at index position.
 
     ```Dart
     class Route {
