@@ -3,25 +3,28 @@
 
 _**Keywords**: Custom element_
 
+1. Implement `save` in `services.dart` ([Hints](#hints))
 
-1. Modify `services.dart` :
-  - Change `games` list to transform it as a observable list.
-  - Create a `Game save(Game game)` method : Add new element when it's a new game and replace occurence otherwise ([Hint](#user-story-6-hints)).
-  
-2. Modify `x-game-edit` web component :
-  - Add a `save` method which call `save` method from `GameStoreService`.
+  ```Dart
+  Game save(Game game) {
+    // Add to the list when it's a new game
+    // Replace the existing one when it already exists
+  }
+  ```
+2. Update `x-game-edit` web component
+  - Add a `save` event handler which call `save` method in `gameStoreService`.
   - Call this method when the user click on save button.
-  
-3. Modify `index.html` :
-  - Add the custom element `gameId`   
-  
-4. Yeah! So many games to add!
+3. Update `index.html`, remove the `gameId` attribute and try to save
 
-![x-game-edit newgame](docs/img/x-game-edit-newgame.png)
+  ```HTML
+  <x-game-edit></x-game-edit>
+  ```
+4. Yeah! So many games to add!  
+  ![x-game-edit newgame](docs/img/x-game-edit-newgame.png)
  
  
-<a name="user-story-6-hints"></a>
+<a name="hints"></a>
 > **Hints:** 
-> You can use `map` and `fold` methods on `games` list to find next id.
+> You must set the id for a new game. Use `map` and `fold` methods on `games` list to find next id.
 
 ## [Next >](user-story-7.md)
