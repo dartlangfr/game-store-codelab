@@ -15,14 +15,14 @@ _**Keywords**: router, url pattern, handler_
   - Create a router. 
   - In `route.html`, create 2 templates conditions according to url : one to display `x-games`, the other for `x-game-edit`.
   - Use this class to help you to find paramater at index position.  
-	```Dart
+    ```Dart
 	class Route {
-	  final UrlPattern url;
-	  final List params;
-	  Route(this.url, [this.params = const []]);
-	  operator [](int index) => index < params.length ? params[index] : null;
+  	  final UrlPattern url;
+  	  final List params;
+  	  Route(this.url, [this.params = const []]);
+  	  operator [](int index) => index < params.length ? params[index] : null;
 	}
-	```
+    ``` 
   
 3. In `index.html`, use `x-route` instead of `x-game-edit` and `x-games`.
 
