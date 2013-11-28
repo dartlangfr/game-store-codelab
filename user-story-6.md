@@ -9,7 +9,7 @@
     // Replace the existing one when it already exists
   }
   ```
-2. Update `x-game-edit` web component
+2. Update `x-game-edit` element
   - Add a `save` event handler which call `save` method in `gameStoreService`.
   - Call this method when the user click on save button.
 3. Update `index.html`, remove the `gameId` attribute and try to save
