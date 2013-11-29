@@ -23,7 +23,7 @@ _**Keywords**: two-way data binding, two-way filter_
     @published int gameId = null;
     @observable Game game = new Game.sample();
     ```
-  - Retrieve the game to edit when the `gameId` attribute change ([Hints](#hints))
+  - Retrieve the game to edit when the `gameId` attribute changes ([Hints](#hints))
     - if `gameId` is null, set `game` with `new Game.sample()`
     - else set `game` with the retrieved game
 3. Bind `game` fields to edit them
@@ -36,8 +36,8 @@ _**Keywords**: two-way data binding, two-way filter_
 <a name="hints"></a>
 > **Hints:**
 >
-> - Use [onPropertyChange](https://api.dartlang.org/docs/channels/be/latest/observe.html#onPropertyChange) to execute a function when an observable property change
-> - Remember what to do to notify bindings when value changed
+> - Use [onPropertyChange](https://api.dartlang.org/docs/channels/be/latest/observe.html#onPropertyChange) to execute a function when an observable property changes
+> - Remember what to do to notify bindings when value has changed
 > - To create a two-way filter, implement a `Transformer` class (No docs :( see [Bind number to text field with filter  example](https://github.com/sethladd/dart-polymer-dart-examples/tree/master/web/bind_number_to_text_field_with_filter))
 
 ## [Next >](user-story-6.md)

@@ -12,7 +12,7 @@ _**Keywords**: custom element, template, binding, filter function_
     dependencies:
       polymer: any
     ```
-  - `build.dart` is runned after a file is saved, and displays Polymer warnings from the linter
+  - `build.dart` is launched after a file is saved, and displays Polymer warnings from the linter
   - `clickcounter.html` and `clickcounter.dart` is a custom element named `click-counter`
   
     ```HTML
@@ -33,7 +33,7 @@ _**Keywords**: custom element, template, binding, filter function_
       // ...
     }
     ```
-  - `game_store_codelab.html` imports `click-counter` element to used it and initializes Dart and Polymer
+  - `game_store_codelab.html` imports `click-counter` element to use it and initializes Dart and Polymer
   
     ```HTML
     <head>
@@ -50,7 +50,7 @@ _**Keywords**: custom element, template, binding, filter function_
 
 2. Copy all files from the _[template](./template)_ folder into the _web_ directory of your project
 3. Create a new custom element `x-game`
-  - Create `game.html` and `game.dart` files taking `click-counter` element as an example
+  - Create `game.html` and `game.dart` file taking `click-counter` element as an example
   - Copy the `GAME_TEMPLATE` html blocks from the templates into the body of your custom element
   - Import and use it in your `index.html` file
 

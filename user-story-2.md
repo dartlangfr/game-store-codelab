@@ -4,7 +4,7 @@
 _**Keywords**: template loop, custom attribute, nested component_
 
 1. Create a new custom element `x-games` 
-  - Create `games.html` and `games.dart` files and copy the `GAMES_TEMPLATE`  html blocks from the templates into its body  
+  - Create `games.html` and `games.dart` file and copy the `GAMES_TEMPLATE`  html blocks from the templates into its body  
   _We are going to work with the `GAMES_TEMPLATE_DETAILED` in this user story so comment or remove the `GAMES_TEMPLATE_COMPACT`_
   - Import and use it in your `index.html` instead of `x-game` and check the result
 2. One game is not enough for a Game Store, create a service to retrieve games
@@ -33,7 +33,7 @@ _**Keywords**: template loop, custom attribute, nested component_
     ```Dart
     List<Game> games = gameStoreService.games;
     ```    
-3. Iterate over the games list
+3. Iterate over the game list
   - Import `x-game` component in your `games.html` file to be able to reused it.
   - Loop over games with a template loop and reuse the `x-game` component like this ([Hints](#user-story-2-hints)):
 

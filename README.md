@@ -25,10 +25,10 @@ Before you begin this codelab, you should have the last [Dart Editor][1] Setup r
 The [Template HTML page][6] is composed of three main template blocks
 
 - `GAME_TEMPLATE` displays the content of a game
-- `GAMES_TEMPLATE` displays a toolbar and the games list:
+- `GAMES_TEMPLATE` displays a toolbar and the game list:
   - The toolbar allows to search, filter, sort games and switch between the templates below
-  - `GAMES_TEMPLATE_DETAILED` displays the games list reusing the `GAME_TEMPLATE`
-  - `GAMES_TEMPLATE_COMPACT` displays the games list with a compact template
+  - `GAMES_TEMPLATE_DETAILED` displays the game list reusing the `GAME_TEMPLATE`
+  - `GAMES_TEMPLATE_COMPACT` displays the game list with a compact template
 - `GAME_EDIT_TEMPLATE` displays a form to edit a game
 
 See the [Live preview][6] and the [HTML source](../../blob/master/template/index.html)
@@ -38,7 +38,7 @@ This codelab is divided into the following sections:
 
 1. [Show the content of a game](user-story-1.md)
 2. [Show the list of all games (detailed template)](user-story-2.md)
-3. [Filter and sort the games list](user-story-3.md)
+3. [Filter and sort the game list](user-story-3.md)
 4. [Show the list of all games (compact template)](user-story-4.md)
 5. [Edit the content of an existing game](user-story-5.md)
 6. [Add a new game](user-story-6.md)

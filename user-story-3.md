@@ -1,5 +1,5 @@
-## 3. Filter and sort the games list
-> **Goal**: _As a user, I want to filter and sort the games list_
+## 3. Filter and sort the game list
+> **Goal**: _As a user, I want to filter and sort the game list_
 
 _**Keywords**: two-way databinding, observable, event handler_
 
@@ -22,12 +22,12 @@ _**Keywords**: two-way databinding, observable, event handler_
     ```
 2. Filter the game list when typing text in search input
     - Add a `search` attribute in `games.dart` and bind it to the search input value ([Hints](#user-story-3-hints))
-    - Implement a filter function `filterSearch` that allows to filter a games sequence and use it in the template loop binding ([Hints](#user-story-3-hints)):
+    - Implement a filter function `filterSearch` that allows to filter a game sequence and use it in the template loop binding ([Hints](#user-story-3-hints)):
 
     ```HTML
     <template repeat="{{game in games | filterSearch(search)}}">
     ```
-3. Sort games list when clicking on _Sort by name_ or _Sort by rating_ buttons
+3. Sort game list when clicking on _Sort by name_ or _Sort by rating_ buttons
   - In `games.html`, bind click events to `sort` handler
 
     ```HTML
@@ -37,7 +37,7 @@ _**Keywords**: two-way databinding, observable, event handler_
   - In `games.dart`, implement the click handler `sort` that sets two new fields `sortField` and `sortAscending`
     - `sortField` is set from the `data-field` attribute in the target element ([Hints](#user-story-3-hints))
     - `sortAscending` is reversed each time a button is clicked
-  - Implement a filter function `sortBy` that sorts a games sequence and use it in the template loop binding ([Hints](#user-story-3-hints)):
+  - Implement a filter function `sortBy` that sorts a game sequence and use it in the template loop binding ([Hints](#user-story-3-hints)):
 
     ```HTML
     <template repeat="{{game in games | filterSearch(search) | sortBy(sortField, sortAscending)}}">

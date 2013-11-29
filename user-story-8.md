@@ -10,7 +10,7 @@ _**Keywords**: router, url pattern_
         route: any
     ```
 2. Create a new custom element `x-route` ([Hints](#hints))
-  - Create `route.html` and `route.dart` files. Copy this class as it is:  
+  - Create `route.html` and `route.dart` file. Copy this class as it is:  
 
     ```Dart
     import 'package:polymer/polymer.dart';
@@ -52,7 +52,7 @@ _**Keywords**: router, url pattern_
     }
     ```
 3. Explore this class
-  - When one of registered `UrlPattern` is handled on url change, the `route` attribute is updated. There is already three registered patterns:
+  - When one of registered `UrlPattern` is handled on url that has changed, the `route` attribute is updated. There is already three registered patterns:
     - `#/games`: to show the games list
     - `#/game/1`: to edit the game with id=1
     - `#/games/new`: to create a new game
