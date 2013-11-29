@@ -62,4 +62,4 @@ _Thanks to [+Thierry Lau](https://plus.google.com/+ThierryLAU). We took as examp
   [4]: https://www.dartlang.org/polymer-dart/
   [5]: https://github.com/sethladd/dart-polymer-dart-examples/tree/master/web
   [6]: http://dartlangfr.github.io/game-store-codelab/template/
-  [feedback]: https://docs.google.com/forms/d/1gTHgo6LhNhhBMOkwaUEFZuvHQMdtnaklZbW8_4MCAcY/viewform?entry.1890092742=At%C2%A0dotJS+Workshop,+Nov.+28th+2013&entry.1014593415=France&entry.475282761
+  [feedback]: https://docs.google.com/forms/d/1gTHgo6LhNhhBMOkwaUEFZuvHQMdtnaklZbW8_4MCAcY/viewform?entry.1890092742=At%C2%A0dotJS+Workshop,+Nov.+30th,+2013&entry.1014593415=France&entry.475282761
