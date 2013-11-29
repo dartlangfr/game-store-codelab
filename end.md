@@ -2,7 +2,7 @@
 Congratulations, you've completed this codelab and have created a single page application with Dart and Polymer.
 
 ## Feedback
-If you've got a few minutes, would you mind filling out an [anonymous feedback form **TODO**]() on the course so we can improve it in future?
+If you've got a few minutes, would you mind filling out an [anonymous feedback form][feedback] on the course so we can improve it in future?
 
 ## Bonus user stories
 
@@ -19,3 +19,5 @@ If you've got a few minutes, would you mind filling out an [anonymous feedback f
 6. [Add a new game](../../compare/user-story-5...user-story-6)
 7. [Delete a game](../../compare/user-story-6...user-story-7)
 8. [Single-page application](../../compare/user-story-7...user-story-8)
+
+  [feedback]: https://docs.google.com/forms/d/1gTHgo6LhNhhBMOkwaUEFZuvHQMdtnaklZbW8_4MCAcY/viewform?entry.1890092742=At%C2%A0dotJS+Workshop,+Nov.+28th+2013&entry.1014593415=France&entry.475282761
