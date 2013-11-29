@@ -45,13 +45,16 @@ This codelab is divided into the following sections:
 7. [Delete a game](user-story-7.md)
 8. [Single-page application](user-story-8.md)
 
+# Feedback
+At the end, if you've got a few minutes, would you mind filling out an [anonymous feedback form **TODO**]() on the course so we can improve it in future?
+
 # Credits
 
 - [+Guillaume Girou](https://plus.google.com/+GuillaumeGirou), Dart Evangelist [@Sfeir](http://www.sfeir.com/)
 - [+Nicolas François](https://plus.google.com/+NicolasFrancois), Dart Evangelist [@Sfeir](http://www.sfeir.com/)
 
 _Thanks to [+DartlangFr](http://gplus.to/dartlangfr) team_  
-_Thanks to [+Thierry Lau](https://plus.google.com/+ThierryLAU) for his AngularJS project [AngularMovie](https://github.com/lauterry/angularmovie) on which we take as example._
+_Thanks to [+Thierry Lau](https://plus.google.com/+ThierryLAU). We took as example his AngularJS project [AngularMovie](https://github.com/lauterry/angularmovie)._
 
   [1]: https://www.dartlang.org/
   [2]: https://www.dartlang.org/docs/dart-up-and-running/contents/ch02.html
