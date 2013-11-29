@@ -53,7 +53,7 @@ At the end, if you've got a few minutes, would you mind filling out an [anonymou
 - [+Guillaume Girou](https://plus.google.com/+GuillaumeGirou), Dart Evangelist [@Sfeir](http://www.sfeir.com/)
 - [+Nicolas François](https://plus.google.com/+NicolasFrancois), Dart Evangelist [@Sfeir](http://www.sfeir.com/)
 
-_Thanks to [+DartlangFr](http://gplus.to/dartlangfr) team_  
+_Thanks to [+DartlangFr](http://gplus.to/dartlangfr) team._  
 _Thanks to [+Thierry Lau](https://plus.google.com/+ThierryLAU). We took as example his AngularJS project [AngularMovie](https://github.com/lauterry/angularmovie)._
 
   [1]: https://www.dartlang.org/
