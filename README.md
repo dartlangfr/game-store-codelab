@@ -46,7 +46,7 @@ This codelab is divided into the following sections:
 8. [Single-page application](user-story-8.md)
 
 # Feedback
-At the end, if you've got a few minutes, would you mind filling out an [anonymous feedback form **TODO**]() on the course so we can improve it in future?
+At the end, if you've got a few minutes, would you mind filling out an [anonymous feedback form][feedback] on the course so we can improve it in future?
 
 # Credits
 
@@ -62,3 +62,4 @@ _Thanks to [+Thierry Lau](https://plus.google.com/+ThierryLAU). We took as examp
   [4]: https://www.dartlang.org/polymer-dart/
   [5]: https://github.com/sethladd/dart-polymer-dart-examples/tree/master/web
   [6]: http://dartlangfr.github.io/game-store-codelab/template/
+  [feedback]: https://docs.google.com/forms/d/1gTHgo6LhNhhBMOkwaUEFZuvHQMdtnaklZbW8_4MCAcY/viewform?entry.1890092742=At%C2%A0dotJS+Workshop,+Nov.+28th+2013&entry.1014593415=France&entry.475282761
