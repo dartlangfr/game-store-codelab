@@ -4,7 +4,7 @@
 _**Keywords**: conditional template_
 
 1. Display compact template in games list
-  - In `games.html`, add `GAMES_TEMPLATE_COMPACT` HTML blocks
+  - In `games.html`, add [`GAMES_TEMPLATE_COMPACT`][GAMES_TEMPLATE_COMPACT] HTML blocks
   - Recreate a template loop for it and bind game fields  
     ![x-games both templates](docs/img/x-games-bothtemplates.png)
 2. Switch between templates
@@ -19,8 +19,8 @@ _**Keywords**: conditional template_
     compact(Event e, var detail, Element target) => isCompact = !isCompact;
     ```
   - In `games.html`, use conditional templates to display the right template ([Hints](#hints))
-    - `GAMES_TEMPLATE_COMPACT` when `isCompact` is `true`
-    - `GAMES_TEMPLATE_DETAILED` when `isCompact` is `false`
+    - [`GAMES_TEMPLATE_COMPACT`][GAMES_TEMPLATE_COMPACT] when `isCompact` is `true`
+    - [`GAMES_TEMPLATE_DETAILED`][GAMES_TEMPLATE_DETAILED] when `isCompact` is `false`
 
 3. Great! Needless to scroll down to see all your games  
   ![x-games compact template](docs/img/x-games-compact.png)
@@ -35,3 +35,9 @@ _**Keywords**: conditional template_
 > - Switch the toggle button class between `icon-th-list` and `icon-th` in function of `isCompact` value
 
 ## [Next >](user-story-5.md)
+
+  [GAME_TEMPLATE]: ../../blob/master/template/index.html#L33-L46
+  [GAMES_TEMPLATE]: ../../blob/master/template/index.html#L33-L46
+  [GAMES_TEMPLATE_DETAILED]: ../../blob/master/template/index.html#L67-L106
+  [GAMES_TEMPLATE_COMPACT]: ../../blob/master/template/index.html#L108-L135
+  [GAME_EDIT_TEMPLATE]: ../../blob/master/template/index.html#L140-L166
