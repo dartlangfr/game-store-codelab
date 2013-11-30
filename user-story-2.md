@@ -4,8 +4,8 @@
 _**Keywords**: template loop, custom attribute, nested component_
 
 1. Create a new custom element `x-games` 
-  - Create `games.html` and `games.dart` file and copy the `GAMES_TEMPLATE`  html blocks from the templates into its body  
-  _We are going to work with the `GAMES_TEMPLATE_DETAILED` in this user story so comment or remove the `GAMES_TEMPLATE_COMPACT`_
+  - Create `games.html` and `games.dart` file and copy the [`GAMES_TEMPLATE`][GAMES_TEMPLATE]  html blocks from the templates into its body  
+  _We are going to work with the [`GAMES_TEMPLATE_DETAILED`][GAMES_TEMPLATE_DETAILED] in this user story so comment or remove the [`GAMES_TEMPLATE_COMPACT`][GAMES_TEMPLATE_COMPACT]_
   - Import and use it in your `index.html` instead of `x-game` and check the result
 2. One game is not enough for a Game Store, create a service to retrieve games
   - Create a file `services.dart` with the class `InMemoryGameStoreService`:
@@ -52,3 +52,10 @@ _**Keywords**: template loop, custom attribute, nested component_
 > - The `game` attribute in `x-game` should be a public attribute. (See [Custom Attributes](https://www.dartlang.org/polymer-dart/#custom-attributes))
 
 ## [Next >](user-story-3.md)
+
+  [GAME_TEMPLATE]: ../../blob/master/template/index.html#L33-L46
+  [GAMES_TEMPLATE]: ../../blob/master/template/index.html#L50-L136
+  [GAMES_TEMPLATE_DETAILED]: ../../blob/master/template/index.html#L67-L106
+  [GAMES_TEMPLATE_COMPACT]: ../../blob/master/template/index.html#L108-L135
+  [GAME_EDIT_TEMPLATE]: ../../blob/master/template/index.html#L140-L166
+  
