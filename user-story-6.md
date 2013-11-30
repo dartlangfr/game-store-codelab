@@ -10,7 +10,7 @@
   }
   ```
 2. Update `x-game-edit` element
-  - Add a `save` event handler which call `save` method in `gameStoreService`.
+  - Add a `save` event handler which call `gameStoreService.save(game)` method.
   - Bind this handler on the save button click.
 3. Update `index.html`, remove the `gameId` attribute and try to save a game
 
