@@ -51,7 +51,7 @@ _**Keywords**: custom element, template, binding, filter function_
 2. Copy all files from the _[template](./template)_ folder into the _web_ directory of your project
 3. Create a new custom element `x-game`
   - Create `game.html` and `game.dart` file taking `click-counter` element as an example
-  - Copy the `GAME_TEMPLATE` html blocks from the templates into the body of your custom element
+  - Copy the [`GAME_TEMPLATE`](../../blob/master/template/index.html#L33-L46) HTML blocks from the templates into the body of your custom element
   - Import and use it in your `index.html` file
 
     ```HTML
