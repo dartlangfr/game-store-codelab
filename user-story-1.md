@@ -51,7 +51,7 @@ _**Keywords**: custom element, template, binding, filter function_
 2. Copy all files from the _[template](./template)_ folder into the _web_ directory of your project
 3. Create a new custom element `x-game`
   - Create `game.html` and `game.dart` file taking `click-counter` element as an example
-  - Copy the [`GAME_TEMPLATE`](../../blob/master/template/index.html#L33-L46) HTML blocks from the templates into the body of your custom element
+  - Copy the [`GAME_TEMPLATE`][GAME_TEMPLATE] HTML blocks from the templates into the body of your custom element
   - Import and use it in your `index.html` file
 
     ```HTML
@@ -110,3 +110,9 @@ _**Keywords**: custom element, template, binding, filter function_
 > - Implement also a filter function to transform the rating integer to &#9733; characters ([List.generate](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html#generate) and [List.join](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html#join) may help)
 
 ## [Next >](user-story-2.md)
+
+  [GAME_TEMPLATE]: ../../blob/master/template/index.html#L33-L46
+  [GAMES_TEMPLATE]: ../../blob/master/template/index.html#L33-L46
+  [GAMES_TEMPLATE_DETAILED]: ../../blob/master/template/index.html#L67-L106
+  [GAMES_TEMPLATE_COMPACT]: ../../blob/master/template/index.html#L108-L135
+  [GAME_EDIT_TEMPLATE]: ../../blob/master/template/index.html#L140-L166
