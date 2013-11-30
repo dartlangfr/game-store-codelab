@@ -24,12 +24,12 @@ Before you begin this codelab, you should have the last [Dart Editor][1] Setup r
 # Templates
 The [Template HTML page][6] is composed of three main template blocks
 
-- `GAME_TEMPLATE` displays the content of a game
-- `GAMES_TEMPLATE` displays a toolbar and the game list:
+- [`GAME_TEMPLATE`][GAME_TEMPLATE] displays the content of a game
+- [`GAMES_TEMPLATE`][GAMES_TEMPLATE] displays a toolbar and the game list:
   - The toolbar allows to search, filter, sort games and switch between the templates below
-  - `GAMES_TEMPLATE_DETAILED` displays the game list reusing the `GAME_TEMPLATE`
-  - `GAMES_TEMPLATE_COMPACT` displays the game list with a compact template
-- `GAME_EDIT_TEMPLATE` displays a form to edit a game
+  - [`GAMES_TEMPLATE_DETAILED`][GAMES_TEMPLATE_DETAILED] displays the game list reusing the `GAME_TEMPLATE`
+  - [`GAMES_TEMPLATE_COMPACT`][GAMES_TEMPLATE_COMPACT] displays the game list with a compact template
+- [`GAME_EDIT_TEMPLATE`][GAME_EDIT_TEMPLATE] displays a form to edit a game
 
 See the [Live preview][6] and the [HTML source](../../blob/master/template/index.html)
 
@@ -63,3 +63,10 @@ _Thanks to [+Thierry Lau](https://plus.google.com/+ThierryLAU). We took as examp
   [5]: https://github.com/sethladd/dart-polymer-dart-examples/tree/master/web
   [6]: http://dartlangfr.github.io/game-store-codelab/template/
   [feedback]: https://docs.google.com/forms/d/1gTHgo6LhNhhBMOkwaUEFZuvHQMdtnaklZbW8_4MCAcY/viewform?entry.1890092742=At%C2%A0dotJS+Workshop,+Nov.+30th,+2013&entry.1014593415=France&entry.475282761
+
+  [GAME_TEMPLATE]: ../../blob/master/template/index.html#L33-L46
+  [GAMES_TEMPLATE]: ../../blob/master/template/index.html#L50-L136
+  [GAMES_TEMPLATE_DETAILED]: ../../blob/master/template/index.html#L67-L106
+  [GAMES_TEMPLATE_COMPACT]: ../../blob/master/template/index.html#L108-L135
+  [GAME_EDIT_TEMPLATE]: ../../blob/master/template/index.html#L140-L166
+  
