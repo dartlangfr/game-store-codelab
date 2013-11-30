@@ -48,7 +48,7 @@ _**Keywords**: two-way databinding, observable, event handler_
 <a name="user-story-3-hints"></a>
 > **Hints:**
 >
-> - In this user story, attributes must be **Observable**, when the value changed, bindings are notified (See [Data binding](https://www.dartlang.org/polymer-dart/#data-binding))
+> - In this user story, attributes must be **`@observable`**, when the value changed, bindings are notified (See [Data binding](https://www.dartlang.org/polymer-dart/#data-binding))
 > - Dynamic filter function with bound parameters must return a filter function Oo
 >
 >   ```Dart
