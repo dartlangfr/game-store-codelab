@@ -49,7 +49,7 @@ _**Keywords**: custom element, template, binding, filter function_
       <click-counter count="5"></click-counter>
     </body>
     ```
-
+  - Run `game_store_codelab.html` in Dartium and test it
 2. Copy all files from the _[template](./template)_ folder into the _web_ directory of your project
 3. Create a new custom element `x-game`
   - Create `game.html` and `game.dart` file taking `click-counter` element as an example
