@@ -14,7 +14,7 @@ _**Keywords**: custom element, template, binding, filter function_
     ```
   - `build.dart` is launched after a file is saved, and displays Polymer warnings from the linter
   - `clickcounter.html` and `clickcounter.dart` is a custom element named `click-counter`  
-    _Remove them or keep them as examples_
+    _We're not going to work with them, you can remove them or keep them as examples_
   
     ```HTML
     <polymer-element name="click-counter" attributes="count">
@@ -35,7 +35,7 @@ _**Keywords**: custom element, template, binding, filter function_
     }
     ```
   - `game_store_codelab.html` imports `click-counter` element to use it and initializes Dart and Polymer  
-    _Remove it or keep it as example_
+    _We're not going to work with it, you can remove it or keep it as example_
   
     ```HTML
     <head>
