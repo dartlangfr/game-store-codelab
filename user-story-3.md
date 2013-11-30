@@ -3,7 +3,7 @@
 
 _**Keywords**: two-way databinding, observable, event handler_
 
-1. In `models.dart` add those methods to the `Game` class. They will help you to filter and sort.
+1. In `models.dart`, add those methods in `Game` class. They will help you to filter and sort.
 
     ```Dart
     // Used for FILTERING
