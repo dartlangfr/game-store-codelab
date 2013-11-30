@@ -4,7 +4,7 @@
 _**Keywords**: two-way data binding, two-way filter_
 
 1. Create a new custom element `x-game-edit`
-  - Create `game-edit.html` and `game-edit.dart` files and copy the `GAME_EDIT_TEMPLATE` html blocks from the templates into its body  
+  - Create `game-edit.html` and `game-edit.dart` files and copy the [`GAME_EDIT_TEMPLATE`][GAME_EDIT_TEMPLATE] html blocks from the templates into its body  
   - Import and use it in `index.html`:
 
     ```HTML
@@ -41,3 +41,9 @@ _**Keywords**: two-way data binding, two-way filter_
 > - To create a two-way filter, implement a `Transformer` class (No docs :( see [Bind number to text field with filter  example](https://github.com/sethladd/dart-polymer-dart-examples/tree/master/web/bind_number_to_text_field_with_filter))
 
 ## [Next >](user-story-6.md)
+
+  [GAME_TEMPLATE]: ../../blob/master/template/index.html#L33-L46
+  [GAMES_TEMPLATE]: ../../blob/master/template/index.html#L33-L46
+  [GAMES_TEMPLATE_DETAILED]: ../../blob/master/template/index.html#L67-L106
+  [GAMES_TEMPLATE_COMPACT]: ../../blob/master/template/index.html#L108-L135
+  [GAME_EDIT_TEMPLATE]: ../../blob/master/template/index.html#L140-L166
