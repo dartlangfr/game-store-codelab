@@ -28,13 +28,11 @@
             </tr>
           </thead>
           <tbody>
-            <template repeat="{{game in games | filterSearch(search) | sortBy(sortField, sortAscending)}}">
-              <tr>
-                <td>{{game.name}}</td>
-                <td>{{game.genre}}</td>
-                <td>{{game.rating | stars}}</td>
-              </tr>
-            </template>
+            <tr template repeat="{{game in games | filterSearch(search) | sortBy(sortField, sortAscending)}}">
+              <td>{{game.name}}</td>
+              <td>{{game.genre}}</td>
+              <td>{{game.rating | stars}}</td>
+            </tr>
           </tbody>
         </table>
       </template>
