@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game Store</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    
+    <link rel="import" href="game.html">
+
+    <script type="application/dart">export 'package:polymer/init.dart';</script>
+    <script src="packages/browser/dart.js"></script>
+    
+  </head>
+  <body>
+  
+    <!-- Navigation bar -->
+    <header class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <section class="container">
+          <a class="brand" href="#/welcome">Game Store</a>
+          <ul class="nav">
+            <li><a href="#/games">Games</a></li>
+          </ul>
+        </section>
+      </div>
+    </header>
+    
+    <!-- Main part -->
+    <section class="container">
+      <x-game></x-game>
+    </section>
+  </body>
+</html>

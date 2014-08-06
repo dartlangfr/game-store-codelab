@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<link rel="import" href="games.html">
+<link rel="import" href="game-edit.html">
+
+<polymer-element name="x-route">
+  <template>
+    <template if="{{route.url == gamesUrl}}">
+      <x-games></x-games>
+    </template>
+    <template if="{{route.url == gameUrl || route.url == newGameUrl}}">
+      <x-game-edit gameId="{{route[1] | asInt}}"></x-game-edit>
+    </template>
+  </template>
+  <script type="application/dart" src="route.dart"></script>
+</polymer-element>

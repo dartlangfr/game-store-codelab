@@ -1,0 +1,35 @@
+<polymer-element name="x-game-edit">
+  <template> 
+    <header class="page-header">
+        <h1>Game edit</h1>
+    </header>
+  
+    <div class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label">Name: </label>
+            <input type="text" value="{{game.name}}">
+        </div>
+        <div class="control-group">
+            <label class="control-label">Image: </label>
+            <input type="text" value="{{game.image}}">
+        </div>
+        <div class="control-group">
+            <label class="control-label">Genre: </label>
+            <input type="text" value="{{game.genre}}">
+        </div>
+        <div class="control-group">
+            <label class="control-label">Description: </label>
+            <textarea value="{{game.description}}"></textarea>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Rating: </label>
+            <input type="number" value="{{game.rating | asInt}}" placeholder="from 1 to 5" min="1" max="5">
+        </div>
+        <footer class="form-actions">
+            <a href="#/games" class="btn btn-danger btn-small">Cancel</a>
+            <a href="#/games" class="btn btn-success">Save</a>
+        </footer>
+    </div>
+  </template>
+  <script type="application/dart" src="game-edit.dart"></script>
+</polymer-element>

@@ -1,0 +1,8 @@
+name: game_store_codelab
+description: A sample Polymer application
+dependencies:
+    polymer: any
+    route: any
+transformers:
+- polymer:
+    entry_points: web/game_store_codelab.html

@@ -1,0 +1,28 @@
+<link rel="import" href="game.html">
+
+<polymer-element name="x-games">
+  <template>
+    <header class="page-header">
+        <h1>Game store <small>{{games.length}} games</small>
+          <a href="#/games/new" class="btn btn-primary">Add a game</a>
+        </h1>
+      </header>
+      
+      <section class="well form-inline">
+        <input type="text" placeholder="Search" class="span5">
+        <section class="pull-right">
+          <button class="btn btn-success"><i class="icon-th-list icon-white"></i></button>
+          <button class="btn btn-info">Sort by name</button>
+          <button class="btn btn-info">Sort by rating</button>
+        </section>
+      </section>
+      
+      <div class="games">
+        <template repeat="{{game in games}}">
+          <x-game game="{{game}}"></x-game>
+        </template>
+      </div>
+  </template>
+  <script type="application/dart" src="games.dart"></script>
+</polymer-element>
+
