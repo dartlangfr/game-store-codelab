@@ -5,4 +5,4 @@ dependencies:
     route: any
 transformers:
 - polymer:
-    entry_points: web/game_store_codelab.html
+    entry_points: web/index.html
