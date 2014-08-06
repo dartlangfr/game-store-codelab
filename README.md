@@ -68,4 +68,4 @@ _Thanks to [+Thierry Lau](https://plus.google.com/+ThierryLAU). We took as examp
   [GAMES_TEMPLATE]: ../../blob/master/template/index.html#L53-L139
   [GAMES_TEMPLATE_DETAILED]: ../../blob/master/template/index.html#L70-L109
   [GAMES_TEMPLATE_COMPACT]: ../../blob/master/template/index.html#L111-L138
-  [GAME_EDIT_TEMPLATE]: ../../blob/master/template/index.html#L143-L169  
+  [GAME_EDIT_TEMPLATE]: ../../blob/master/template/index.html#L143-L173  
