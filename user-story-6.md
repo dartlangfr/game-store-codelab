@@ -4,7 +4,7 @@
 1. Implement `save` in `services.dart` ([Hints](#hints))
 
   ```Dart
-  Game save(Game game) {
+  save(Game game) {
     // Add to the list when it's a new game
     // Replace the existing one when it already exists
   }
