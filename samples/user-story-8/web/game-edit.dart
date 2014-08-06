@@ -6,8 +6,6 @@ import 'services.dart';
 
 @CustomTag('x-game-edit')
 class XGameEdit extends PolymerElement {
-  // Whether styles from the document apply to the contents of the component
-  bool get applyAuthorStyles => true;
   XGameEdit.created() : super.created() {
     onPropertyChange(this, #gameId, loadGame);
   }

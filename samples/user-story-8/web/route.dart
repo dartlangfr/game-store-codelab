@@ -3,8 +3,6 @@ import 'package:route/client.dart';
 
 @CustomTag('x-route')
 class XRoute extends PolymerElement {
-  // Whether styles from the document apply to the contents of the component
-  bool get applyAuthorStyles => true;
   XRoute.created() : super.created() {
     var router = new Router()
       ..addHandler(gamesUrl, _routeHandler(gamesUrl))

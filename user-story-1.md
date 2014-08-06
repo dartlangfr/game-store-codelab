@@ -61,6 +61,13 @@ _**Keywords**: custom element, template, binding, filter function_
       <x-game></x-game>
     </section>
     ```
+  - Open `pubspec.yaml`. Change the entry point to :
+  
+    ```YAML
+transformers:
+- polymer:
+    entry_points: web/index.html
+    ```
   - Run `index.html` in Dartium and you should see something like this ([Hints](#user-story-1-hints)):  
     ![x-game first import](docs/img/x-game-first-import-style.png)
 4. Congrats! You created your first custom element! But it's all static, let's do some data bindings :)
@@ -103,10 +110,10 @@ _**Keywords**: custom element, template, binding, filter function_
 > **Hints:**
 > 
 > - Don't forget to add needed tags in `index.html` header
-> - To apply styles from the document to the contents of a custom element, add this getter in its dart class: 
+> - You need special CSS selectors (/deep/) for the styles to apply inside our webcomponents just like in our `app.css` file. Current CSS libs like bootstrap don't actually use them. For the styles to apply, import the style in each of your templates with:
 >
->   ```Dart
->   bool get applyAuthorStyles => true;
+>   ```html
+>   <link rel="stylesheet" href="css/bootstrap.min.css">
 >   ```
 > - Implement a filter function to uppercase the game name, defined in the custom element class (See [Polymer expressions](http://pub.dartlang.org/packages/polymer_expressions))
 > - Implement also a filter function to transform the rating integer to &#9733; characters ([List.generate](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html#generate) and [List.join](https://api.dartlang.org/docs/channels/stable/latest/dart_core/List.html#join) may help)
