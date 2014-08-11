@@ -17,6 +17,7 @@ _**Keywords**: custom element, template, binding, filter function_
     _We're not going to work with them, you can remove them or keep them as examples_
   
     ```HTML
+    <link rel="import" href="packages/polymer/polymer.html">
     <polymer-element name="click-counter" attributes="count">
       <template>
         <!-- Custom element body -->
@@ -28,6 +29,9 @@ _**Keywords**: custom element, template, binding, filter function_
     ```Dart
     import 'package:polymer/polymer.dart';
 
+    /**
+     * A Polymer click counter element.
+     */
     @CustomTag('click-counter')
     class ClickCounter extends PolymerElement {
       ClickCounter.created() : super.created();
@@ -39,6 +43,8 @@ _**Keywords**: custom element, template, binding, filter function_
   
     ```HTML
     <head>
+      <script src="packages/web_components/platform.js"></script>
+      <script src="packages/web_components/dart_support.js"></script>
       <!-- import the click-counter -->
       <link rel="import" href="clickcounter.html">
       <script type="application/dart">export 'package:polymer/init.dart';</script>
@@ -109,7 +115,7 @@ transformers:
 <a name="user-story-1-hints"></a>
 > **Hints:**
 > 
-> - Don't forget to add needed tags in `index.html` header
+> - Don't forget to add needed tags in `index.html` header [Using custom elements](https://www.dartlang.org/polymer-dart/#using-custom-elements)
 > - You need special CSS selectors (/deep/) for the styles to apply inside our webcomponents just like in our `app.css` file. Current CSS libs like bootstrap don't actually use them. For the styles to apply, import the style in each of your templates with:
 >
 >   ```html
