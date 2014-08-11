@@ -1,3 +1,4 @@
+import 'dart:html';
 import 'package:polymer/polymer.dart';
 import 'package:polymer_expressions/filter.dart';
 import 'models.dart';
@@ -16,6 +17,8 @@ class XGameEdit extends PolymerElement {
                                       : gameStoreService.getById(gameId);
   
   var asInt = new StringToInt();
+
+  save(MouseEvent e, var detail, Element target) => gameStoreService.save(game);
 }
 
 class StringToInt extends Transformer<String, int> {
