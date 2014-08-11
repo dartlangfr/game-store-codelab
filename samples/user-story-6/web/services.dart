@@ -17,7 +17,7 @@ class InMemoryGameStoreService {
   ]);
   
   Game getById(int id) => games.firstWhere((game) => game.id == id, orElse: () => null);
-  Game save(Game game) {
+  save(Game game) {
     if(game.id == null) {
       game.id = games.map((g) => g.id).fold(0, max) + 1;
       games.add(game);

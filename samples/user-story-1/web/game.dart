@@ -3,7 +3,6 @@ import 'models.dart';
 
 @CustomTag('x-game')
 class XGame extends PolymerElement {
-  bool get applyAuthorStyles => true;
   XGame.created() : super.created();
   
   Game game = new Game.sample();

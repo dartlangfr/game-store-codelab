@@ -2,6 +2,7 @@
 
 <polymer-element name="x-games">
   <template>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <header class="page-header">
         <h1>Game store <small>{{games.length}} games</small>
           <a href="#/games/new" class="btn btn-primary">Add a game</a>
@@ -27,13 +28,11 @@
             </tr>
           </thead>
           <tbody>
-            <template repeat="{{game in games | filterSearch(search) | sortBy(sortField, sortAscending)}}">
-              <tr>
-                <td>{{game.name}}</td>
-                <td>{{game.genre}}</td>
-                <td>{{game.rating | stars}}</td>
-              </tr>
-            </template>
+            <tr template repeat="{{game in games | filterSearch(search) | sortBy(sortField, sortAscending)}}">
+              <td>{{game.name}}</td>
+              <td>{{game.genre}}</td>
+              <td>{{game.rating | stars}}</td>
+            </tr>
           </tbody>
         </table>
       </template>

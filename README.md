@@ -64,9 +64,8 @@ _Thanks to [+Thierry Lau](https://plus.google.com/+ThierryLAU). We took as examp
   [6]: http://dartlangfr.github.io/game-store-codelab/template/
   [feedback]: https://docs.google.com/forms/d/1gTHgo6LhNhhBMOkwaUEFZuvHQMdtnaklZbW8_4MCAcY/viewform?entry.1890092742=At%C2%A0dotJS+Workshop,+Nov.+30th,+2013&entry.1014593415=France&entry.475282761
 
-  [GAME_TEMPLATE]: ../../blob/master/template/index.html#L33-L46
-  [GAMES_TEMPLATE]: ../../blob/master/template/index.html#L50-L136
-  [GAMES_TEMPLATE_DETAILED]: ../../blob/master/template/index.html#L67-L106
-  [GAMES_TEMPLATE_COMPACT]: ../../blob/master/template/index.html#L108-L135
-  [GAME_EDIT_TEMPLATE]: ../../blob/master/template/index.html#L140-L166
-  
+  [GAME_TEMPLATE]: ../../blob/master/template/index.html#L36-L49
+  [GAMES_TEMPLATE]: ../../blob/master/template/index.html#L53-L139
+  [GAMES_TEMPLATE_DETAILED]: ../../blob/master/template/index.html#L70-L109
+  [GAMES_TEMPLATE_COMPACT]: ../../blob/master/template/index.html#L111-L138
+  [GAME_EDIT_TEMPLATE]: ../../blob/master/template/index.html#L143-L173  

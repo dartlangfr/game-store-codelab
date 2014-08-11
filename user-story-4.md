@@ -36,8 +36,8 @@ _**Keywords**: conditional template_
 
 ## [Next >](user-story-5.md)
 
-  [GAME_TEMPLATE]: ../../blob/master/template/index.html#L33-L46
-  [GAMES_TEMPLATE]: ../../blob/master/template/index.html#L33-L46
-  [GAMES_TEMPLATE_DETAILED]: ../../blob/master/template/index.html#L67-L106
-  [GAMES_TEMPLATE_COMPACT]: ../../blob/master/template/index.html#L108-L135
-  [GAME_EDIT_TEMPLATE]: ../../blob/master/template/index.html#L140-L166
+  [GAME_TEMPLATE]: ../../blob/master/template/index.html#L36-L49
+  [GAMES_TEMPLATE]: ../../blob/master/template/index.html#L53-L139
+  [GAMES_TEMPLATE_DETAILED]: ../../blob/master/template/index.html#L70-L109
+  [GAMES_TEMPLATE_COMPACT]: ../../blob/master/template/index.html#L111-L138
+  [GAME_EDIT_TEMPLATE]: ../../blob/master/template/index.html#L143-L173
