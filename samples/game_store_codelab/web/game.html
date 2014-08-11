@@ -6,7 +6,7 @@
       <img src="img/games/{{game.image}}" alt="Game picture" class="span2">
       <div>
         <h3>{{game.name | uppercase}}
-          <button class="btn btn-danger"><i class="icon-trash icon-white"></i></button>
+          <button on-click="{{delete}}" class="btn btn-danger"><i class="icon-trash icon-white"></i></button>
           <a href="#/games/{{game.id}}" class="btn btn-info"><i class="icon-edit icon-white"></i></a>
         </h3>
         <p><b>Genre:</b> {{game.genre}}</p>

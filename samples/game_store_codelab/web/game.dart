@@ -1,3 +1,4 @@
+import 'dart:html';
 import 'package:polymer/polymer.dart';
 import 'models.dart';
 
@@ -9,5 +10,7 @@ class XGame extends PolymerElement {
   
   String uppercase(String value) => value.toUpperCase();
   String stars(int rating) => new List.generate(rating, (_) => "\u2605").join();
+
+  delete(Event e, var detail, Element target) => dispatchEvent(new CustomEvent('delete', detail: game));
 }
 

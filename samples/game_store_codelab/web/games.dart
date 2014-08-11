@@ -35,5 +35,7 @@ class XGames extends PolymerElement {
 
   // FILTER FUNCTIONS
   String stars(int rating) => new List.generate(rating, (_) => "\u2605").join();
+
+  delete(Event e, Game game, Element target) => gameStoreService.delete(game.id);
 }
 

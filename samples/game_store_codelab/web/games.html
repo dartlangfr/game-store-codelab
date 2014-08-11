@@ -40,7 +40,7 @@
       <template if="{{!isCompact}}">
         <div class="games">
           <template repeat="{{game in games | filterSearch(search) | sortBy(sortField, sortAscending)}}">
-            <x-game game="{{game}}"></x-game>
+            <x-game game="{{game}}" on-delete="{{delete}}"></x-game>
           </template>
         </div>
       </template>
