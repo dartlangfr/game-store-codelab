@@ -13,4 +13,6 @@ class InMemoryGameStoreService {
      new Game(6, "Pool", "Pub game", 'Pool is ..', "pool.jpg", 3),
      new Game(7, "Bingo", "Boring game", 'Bingo is ..', "bingo.jpg", 1)
   ];
+  
+  Game getById(int id) => games.firstWhere((game) => game.id == id, orElse: () => null);
 }
