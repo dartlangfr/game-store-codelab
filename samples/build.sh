@@ -37,4 +37,4 @@ mkdir -p $PWD/build
 
 pub_cmd get "${STEPS[0]}"
 foreach ${STEPS[@]:1} | execute_p pub_cmd get
-foreach ${STEPS[@]:1} | execute_p build
+foreach ${STEPS[@]} | execute_p build
