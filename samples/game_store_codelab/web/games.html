@@ -11,16 +11,16 @@
       </header>
       
       <section class="well form-inline">
-        <input type="text" placeholder="Search" class="span5">
+        <input type="text" placeholder="Search" value="{{search}}" class="span5">
         <section class="pull-right">
           <button class="btn btn-success"><i class="icon-th-list icon-white"></i></button>
-          <button class="btn btn-info">Sort by name</button>
-          <button class="btn btn-info">Sort by rating</button>
+          <button class="btn btn-info" on-click="{{sort}}" data-field="name">Sort by name</button>
+          <button class="btn btn-info" on-click="{{sort}}" data-field="rating">Sort by rating</button>
         </section>
       </section>
       
       <div class="games">
-        <template repeat="{{game in games}}">
+        <template repeat="{{game in games | filterSearch(search) | sortBy(sortField, sortAscending)}}">
           <x-game game="{{game}}"></x-game>
         </template>
       </div>
