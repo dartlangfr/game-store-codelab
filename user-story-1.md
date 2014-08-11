@@ -115,7 +115,7 @@ transformers:
 <a name="user-story-1-hints"></a>
 > **Hints:**
 > 
-> - Don't forget to add needed tags in `index.html` header [Using custom elements](https://www.dartlang.org/polymer-dart/#using-custom-elements)
+> - Don't forget to add needed tags in `index.html` header (See [Using custom elements](https://www.dartlang.org/polymer-dart/#using-custom-elements))
 > - You need special CSS selectors (/deep/) for the styles to apply inside our webcomponents just like in our `app.css` file. Current CSS libs like bootstrap don't actually use them. For the styles to apply, import the style in each of your templates with:
 >
 >   ```html
