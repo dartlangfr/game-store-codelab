@@ -28,5 +28,12 @@ class XGames extends PolymerElement {
     var list = games.toList()..sort(Game.getComparator(field));
     return ascending ? list : list.reversed;
   };
+
+  // ALTERNATIVE TEMPLATE
+  @observable bool isCompact = false;
+  compact(Event e, var detail, Element target) => isCompact = !isCompact;
+
+  // FILTER FUNCTIONS
+  String stars(int rating) => new List.generate(rating, (_) => "\u2605").join();
 }
 
