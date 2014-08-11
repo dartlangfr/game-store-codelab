@@ -2,6 +2,7 @@ name: game_store_codelab
 description: A sample Polymer application
 dependencies:
     polymer: "0.12.0"
+    route: any
 transformers:
 - polymer:
     entry_points: web/index.html
