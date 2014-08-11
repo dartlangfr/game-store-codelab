@@ -12,6 +12,8 @@ TODO:
 The goal of this codelab is to develop a game store application. Users will be able to manage games in the store.  
 Don't worry, HTML templates are provided ;)
 
+Try the [live demo](http://dartlangfr.net/game-store-codelab/user-story-8/).
+
 **Important:**
 Polymer.dart is in beta, and its API is subject to change.
 **This code lab uses Polymer.dart version 0.12.0.**
